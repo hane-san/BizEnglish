@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>BizEngStudy - British Comms Pattern Deck</title>
+  <style>
+    :root {
+      --ink:#243047;
+      --paper:#fbf1df;
+      --paper2:#fff7e8;
+      --navy:#263853;
+      --burgundy:#8b2d3c;
+      --gold:#c18b35;
+      --muted:#8a7861;
+      --line:rgba(20,32,51,.14);
+      --whiteLine:rgba(255,255,255,.16);
+      --shadow:0 22px 70px rgba(12,20,34,.28);
+      --radius:26px;
+      --sans:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;
+      --jp:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;
+      --jpSerif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Source Han Serif JP","Times New Roman",serif;
+      --serif:Georgia,"Times New Roman","Noto Serif JP",serif;
+      --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      --english:Georgia,"Times New Roman","Noto Serif",serif;
+      --englishCore:Georgia,"Times New Roman","Noto Serif",serif;
+      --enInk:#172947;
+      --enInk2:#263a55;
+      --enInk3:#34475d;
+    }
+
+    * { box-sizing:border-box; }
+
+    html, body {
+      margin:0;
+      min-height:100%;
+      overflow:hidden;
+      font-family:var(--sans);
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 12% 7%, rgba(255,230,177,.62), transparent 28%),
+        radial-gradient(circle at 86% 14%, rgba(139,45,60,.16), transparent 31%),
+        radial-gradient(circle at 50% 110%, rgba(38,56,83,.28), transparent 36%),
+        linear-gradient(145deg,#f4e1bf 0%,#efe0c8 48%,#d7c2a2 100%);
+    }
+
+    body {
+      min-height:100svh;
+      padding:max(10px, env(safe-area-inset-top)) 12px max(10px, env(safe-area-inset-bottom));
+      display:flex;
+      justify-content:center;
+      align-items:stretch;
+    }
+
+    .app {
+      width:min(520px,100%);
+      height:calc(100svh - max(10px, env(safe-area-inset-top)) - max(10px, env(safe-area-inset-bottom)) - 2px);
+      display:grid;
+      grid-template-rows:minmax(142px,25%) minmax(0,75%);
+      gap:10px;
+    }
+
+    .top {
+      position:relative;
+      overflow:hidden;
+      border-radius:24px;
+      background:
+        linear-gradient(180deg,rgba(255,252,242,.86),rgba(244,225,191,.72)),
+        rgba(251,241,223,.86);
+      border:1px solid rgba(83,62,39,.18);
+      box-shadow:0 16px 42px rgba(82,56,30,.18);
+      color:#263853;
+      padding:12px;
+      display:grid;
+      grid-template-rows:auto auto minmax(0,1fr);
+      gap:8px;
+      min-height:0;
+    }
+
+    .top::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,rgba(139,45,60,.055) 1px,transparent 1px),
+        linear-gradient(0deg,rgba(38,56,83,.045) 1px,transparent 1px);
+      background-size:28px 28px;
+      opacity:.26;
+      pointer-events:none;
+    }
+
+    .top::after {
+      content:"TEA ROOM  •  LONDON NOTES  •  BRITISH ENGLISH";
+      position:absolute;
+      right:16px;
+      bottom:10px;
+      font-family:var(--mono);
+      font-size:9px;
+      letter-spacing:.16em;
+      color:rgba(38,56,83,.25);
+      pointer-events:none;
+      white-space:nowrap;
+    }
+
+    .brand {
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      min-width:0;
+    }
+
+    .brand-title {
+      font-family:var(--serif);
+      font-weight:900;
+      letter-spacing:-.03em;
+      line-height:.95;
+      font-size:clamp(21px,6.4vw,34px);
+      white-space:nowrap;
+    }
+
+    .brand-sub {
+      font-family:var(--mono);
+      font-size:10px;
+      letter-spacing:.14em;
+      color:rgba(38,56,83,.58);
+      text-align:right;
+      line-height:1.35;
+      text-transform:uppercase;
+    }
+
+    .mode-row {
+      position:relative;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:7px;
+    }
+
+    button {
+      font:inherit;
+      -webkit-tap-highlight-color:transparent;
+    }
+
+    .mode-btn,.tab {
+      appearance:none;
+      border:1px solid rgba(83,62,39,.16);
+      color:#263853;
+      background:rgba(255,248,234,.62);
+      border-radius:999px;
+      font-family:var(--jpSerif);
+      font-weight:650;
+      font-size:11px;
+      line-height:1;
+      padding:9px 8px;
+      min-height:34px;
+      box-shadow:none;
+      letter-spacing:-.035em;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .mode-btn.active {
+      background:linear-gradient(135deg,rgba(239,196,111,.55),rgba(139,45,60,.14));
+      border-color:rgba(193,139,53,.52);
+    }
+
+    .tabs {
+      position:relative;
+      overflow-x:auto;
+      display:flex;
+      gap:7px;
+      padding-bottom:2px;
+      align-items:start;
+      scrollbar-width:none;
+      -webkit-overflow-scrolling:touch;
+    }
+
+    .tabs::-webkit-scrollbar { display:none; }
+
+    .tab {
+      flex:0 0 auto;
+      padding-inline:11px;
+      background:rgba(255,248,234,.54);
+      color:rgba(38,56,83,.70);
+      white-space:nowrap;
+    }
+
+    .tab.active {
+      color:#263853;
+      border-color:rgba(196,154,74,.56);
+      background:rgba(196,154,74,.18);
+    }
+
+    .stage {
+      min-height:0;
+      display:grid;
+    }
+
+    .card {
+      position:relative;
+      height:100%;
+      border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,.23);
+      background:
+        linear-gradient(180deg,rgba(255,252,243,.96),rgba(251,241,223,.98)),
+        var(--paper);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      touch-action:none;
+      user-select:none;
+      -webkit-tap-highlight-color:transparent;
+      transition:transform .20s ease,opacity .20s ease;
+    }
+
+    .card::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 10%,rgba(196,154,74,.18),transparent 30%),
+        linear-gradient(90deg,rgba(20,32,51,.055) 1px,transparent 1px),
+        linear-gradient(0deg,rgba(20,32,51,.035) 1px,transparent 1px);
+      background-size:100% 100%,34px 34px,34px 34px;
+      opacity:.76;
+      pointer-events:none;
+    }
+
+    .card.slide-up { transform:translateY(-22px) scale(.985); opacity:.42; }
+    .card.flip-soft { transform:scale(.988); opacity:.72; }
+
+    .card-inner {
+      position:relative;
+      z-index:1;
+      height:100%;
+      min-height:0;
+      padding:16px;
+      display:grid;
+      gap:10px;
+    }
+
+    .card-head {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      min-height:28px;
+    }
+
+    .category-pill {
+      border:1px solid rgba(122,36,53,.20);
+      color:rgba(122,36,53,.88);
+      background:rgba(122,36,53,.055);
+      border-radius:999px;
+      padding:7px 11px 7px;
+      font-family:var(--jpSerif);
+      font-size:11px;
+      font-weight:650;
+      letter-spacing:-.025em;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .counter {
+      font-family:var(--english);
+      color:rgba(101,87,66,.72);
+      font-size:12px;
+      font-weight:540;
+      letter-spacing:.055em;
+      white-space:nowrap;
+      font-variant-numeric:lining-nums tabular-nums;
+    }
+
+    .front { grid-template-rows:auto minmax(0,1fr) auto; }
+
+    .question-wrap {
+      min-height:0;
+      display:grid;
+      align-content:start;
+      gap:16px;
+      padding:clamp(22px, 4.8svh, 44px) 0 12px;
+    }
+
+    .question-label {
+      display:flex;
+      align-items:center;
+      gap:9px;
+      font-family:var(--english);
+      color:rgba(122,36,53,.72);
+      letter-spacing:.10em;
+      font-size:12px;
+      font-weight:560;
+      font-variant:small-caps;
+      text-transform:none;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .question-label::after {
+      content:"";
+      flex:1 1 auto;
+      height:1px;
+      background:linear-gradient(90deg, rgba(122,36,53,.25), transparent);
+      transform:translateY(1px);
+    }
+
+        .question-ja {
+      font-family:var(--jpSerif);
+      font-weight:650;
+      font-size:clamp(19px,5.75vw,30px);
+      line-height:1.29;
+      letter-spacing:-.055em;
+      color:#263149;
+      text-wrap:balance;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+        .situation {
+      border-left:4px solid rgba(196,154,74,.72);
+      padding:10px 0 10px 12px;
+      color:#655742;
+      font-family:var(--jpSerif);
+      font-size:clamp(10.8px,2.9vw,12.8px);
+      line-height:1.68;
+      letter-spacing:-.035em;
+      background:rgba(196,154,74,.065);
+      border-radius:0 16px 16px 0;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .hint {
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.55;
+    }
+
+    .note-slot {
+      min-height:clamp(18px, 4svh, 34px);
+      border-radius:16px;
+      border:1px dashed rgba(193,139,53,.20);
+      background:rgba(255,248,234,.35);
+    }
+
+        .tap-guide {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding:12px 12px;
+      border-radius:18px;
+      background:rgba(16,27,46,.065);
+      border:1px solid rgba(16,27,46,.09);
+      color:#70624c;
+      font-family:var(--jpSerif);
+      font-size:11.2px;
+      line-height:1.50;
+      letter-spacing:-.035em;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .tap-guide strong {
+      color:rgba(122,36,53,.82);
+      font-family:var(--english);
+      font-weight:560;
+      font-variant:small-caps;
+      letter-spacing:.06em;
+    }
+
+    .answer {
+      grid-template-rows:auto minmax(0,1fr) auto;
+      gap:9px;
+    }
+
+    .answer-body {
+      min-height:0;
+      display:grid;
+      grid-template-rows:minmax(0,31%) minmax(0,24%) minmax(0,45%);
+      gap:9px;
+    }
+
+    .answer-block {
+      position:relative;
+      min-height:0;
+      border:1px solid rgba(20,32,51,.11);
+      border-radius:20px;
+      background:rgba(255,247,232,.86);
+      padding:18px 12px 12px;
+      overflow-y:auto;
+      overflow-x:hidden;
+      overscroll-behavior:contain;
+      touch-action:pan-y;
+      display:grid;
+      align-content:center;
+      gap:5px;
+      transition:transform .11s ease,background .11s ease,border-color .11s ease;
+      scrollbar-width:thin;
+    }
+
+    .answer-block:active {
+      transform:scale(.992);
+      background:rgba(239,196,111,.22);
+      border-color:rgba(122,36,53,.25);
+    }
+    .answer-block::before { content:none; }
+    .answer-block::after { content:none; }
+    .block-title { display:none; }
+
+        .core-en,.business-en,.comms-en {
+      font-family:var(--english);
+      color:var(--enInk2);
+      letter-spacing:-.012em;
+      padding-right:18px;
+      text-wrap:balance;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+      font-variant-ligatures:common-ligatures;
+    }
+
+    .core-en {
+      font-family:var(--englishCore);
+      color:var(--enInk);
+      font-weight:700;
+      font-size:clamp(23px,6.05vw,34px);
+      line-height:1.13;
+      letter-spacing:-.018em;
+    }
+
+    .business-en {
+      color:var(--enInk2);
+      font-weight:570;
+      font-size:clamp(16.2px,4.42vw,21.5px);
+      line-height:1.34;
+    }
+
+    .comms-en {
+      color:var(--enInk3);
+      font-weight:540;
+      font-size:clamp(14.2px,4.0vw,20px);
+      line-height:1.37;
+    }
+
+    .kana {
+      color:rgba(88,74,54,.42);
+      font-family:var(--jp);
+      font-size:clamp(9.2px,2.78vw,11.8px);
+      line-height:1.28;
+      letter-spacing:-.025em;
+    }
+
+        .ja {
+      color:#665a46;
+      font-family:var(--jpSerif);
+      font-size:clamp(10.3px,2.9vw,12.8px);
+      line-height:1.57;
+      letter-spacing:-.035em;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .softmark {
+      background:linear-gradient(180deg, transparent 52%, rgba(236,192,95,.44) 52%, rgba(236,192,95,.44) 92%, transparent 92%);
+      box-shadow:0 1px 0 rgba(139,45,60,.05);
+      border-radius:.18em;
+      box-decoration-break:clone;
+      -webkit-box-decoration-break:clone;
+      padding:0 .035em;
+    }
+
+
+        .answer-footer {
+      min-height:34px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:8px;
+      align-items:center;
+      font-family:var(--jpSerif);
+      font-size:10.6px;
+      line-height:1.42;
+      letter-spacing:-.035em;
+      color:#75664f;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .mini-controls {
+      display:flex;
+      gap:7px;
+    }
+
+    .small-btn {
+      border:1px solid rgba(20,32,51,.12);
+      background:rgba(16,27,46,.065);
+      color:#263853;
+      border-radius:999px;
+      min-height:32px;
+      padding:7px 11px;
+      font-family:var(--jpSerif);
+      font-size:11.5px;
+      font-weight:650;
+      letter-spacing:-.035em;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .toast {
+      position:fixed;
+      left:50%;
+      bottom:max(18px, env(safe-area-inset-bottom));
+      transform:translateX(-50%) translateY(16px);
+      opacity:0;
+      pointer-events:none;
+      z-index:30;
+      background:rgba(10,21,38,.94);
+      border:1px solid rgba(255,255,255,.14);
+      color:#263853;
+      border-radius:999px;
+      padding:10px 14px;
+      font-size:12px;
+      box-shadow:0 16px 48px rgba(0,0,0,.28);
+      transition:opacity .18s ease, transform .18s ease;
+      white-space:nowrap;
+    }
+
+    .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+    @media (max-height:740px) {
+      .app { grid-template-rows:minmax(126px,24%) minmax(0,76%); gap:8px; }
+      .top { padding:10px; gap:6px; }
+      .brand-title { font-size:clamp(19px,5.8vw,28px); }
+      .brand-sub { font-size:9px; }
+      .mode-btn,.tab { min-height:30px; padding:7px 8px; font-size:10px; }
+      .card-inner { padding:13px; gap:8px; }
+      .question-wrap { gap:12px; padding:clamp(16px, 3.6svh, 30px) 0 10px; }
+      .question-ja { font-size:clamp(17.5px,5.45vw,26px); line-height:1.25; }
+      .situation { font-size:10.1px; line-height:1.52; }
+      .hint { font-size:12px; line-height:1.45; }
+      .answer-body { grid-template-rows:minmax(0,30%) minmax(0,24%) minmax(0,46%); gap:7px; }
+      .answer-block { padding:10px; border-radius:18px; gap:4px; }
+      .core-en { font-size:clamp(19.6px,5.58vw,27px); }
+      .business-en { font-size:clamp(14.2px,3.95vw,19px); }
+      .comms-en { font-size:clamp(13px,3.55vw,17.8px); line-height:1.31; }
+      .kana,.ja { line-height:1.3; }
+    }
+
+    @media (max-height:650px) {
+      .kana { display:none; }
+      .answer-footer { font-size:10px; }
+      .block-title { font-size:9px; }
+      .ja { font-size:11px; }
+    }
+  
+    .paper-card,
+    .card-shell,
+    .study-card,
+    .main-card {
+      position:relative;
+      overflow:visible;
+    }
+
+    .travel-badge-sticker {
+      position:absolute;
+      top:14px;
+      right:16px;
+      width:clamp(74px, 17vw, 110px);
+      aspect-ratio:4/3;
+      object-fit:contain;
+      pointer-events:none;
+      user-select:none;
+      z-index:4;
+      filter:drop-shadow(0 10px 20px rgba(34,38,52,.12));
+      opacity:.98;
+      transform:rotate(1.5deg);
+    }
+
+    .has-sticker .question-label,
+    .has-sticker .card-head,
+    .has-sticker .answer-top,
+    .has-sticker .front-top {
+      padding-right:78px;
+    }
+
+    @media (max-width: 520px) {
+      .travel-badge-sticker {
+        top:12px;
+        right:12px;
+        width:clamp(68px, 20vw, 92px);
+      }
+      .has-sticker .question-label,
+      .has-sticker .card-head,
+      .has-sticker .answer-top,
+      .has-sticker .front-top {
+        padding-right:64px;
+      }
+    }
+
+    @media (max-height: 720px) {
+      .travel-badge-sticker {
+        width:clamp(60px, 17vw, 84px);
+        top:10px;
+        right:10px;
+      }
+      .has-sticker .question-label,
+      .has-sticker .card-head,
+      .has-sticker .answer-top,
+      .has-sticker .front-top {
+        padding-right:56px;
+      }
+    }
+
+  
+
+    .top-mascot {
+      position:absolute;
+      top:8px;
+      right:10px;
+      width:clamp(72px, 21vw, 112px);
+      aspect-ratio:4/3;
+      object-fit:contain;
+      pointer-events:none;
+      user-select:none;
+      z-index:2;
+      filter:drop-shadow(0 12px 20px rgba(38,56,83,.14));
+      opacity:.97;
+      transform:rotate(1.5deg);
+    }
+
+    .brand {
+      padding-right:clamp(88px, 26vw, 126px);
+    }
+
+    @media (max-height: 720px) {
+      .top-mascot { width:clamp(62px, 18vw, 86px); top:7px; right:8px; }
+      .brand { padding-right:92px; }
+    }
+
+    @media (max-width: 390px) {
+      .top-mascot { width:clamp(62px, 20vw, 88px); }
+      .brand { padding-right:84px; }
+    }
+
+  </style>
+  <link rel="icon" type="image/png" href="assets/british_travel_icon.png">
+  <link rel="apple-touch-icon" href="assets/british_travel_icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <main class="app">
+    <section class="top">
+      <img class="top-mascot" src="assets/british_travel_badge.png" alt="">
+      <div class="brand">
+        <div class="brand-title">Pattern<br>Deck</div>
+        <div class="brand-sub">British style<br>UK / IN / US</div>
+      </div>
+
+      <div class="mode-row" aria-label="出題モード">
+        <button class="mode-btn" data-mode="sequence">順送り</button>
+        <button class="mode-btn" data-mode="category">カテゴリ内ランダム</button>
+        <button class="mode-btn active" data-mode="all">全ランダム</button>
+      </div>
+
+      <div class="tabs" id="tabs" aria-label="カテゴリタブ"></div>
+    </section>
+
+    <section class="stage">
+      <article class="card" id="card"></article>
+    </section>
+  </main>
+
+
+  <script src="src/cards.js"></script>
+  <script>
+    const cards = window.BIZ_ENG_CARDS || [];
+
+    const categories = ["すべて", ...Array.from(new Set(cards.map(c => c.category)))];
+
+    let mode = "all";
+    let selectedCategory = "すべて";
+    let currentIndex = Math.floor(Math.random() * cards.length);
+    let side = "front";
+    let historyStack = [];
+    let voices = [];
+    let selectedVoiceGB = null;
+    let selectedVoiceIN = null;
+    let selectedVoiceUS = null;
+    let lastAccent = "en-GB";
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartT = 0;
+    let suppressClickUntil = 0;
+
+    const $ = (id) => document.getElementById(id);
+
+    function loadVoices() {
+      voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
+      const britishMale = /Daniel|George|Ryan|Oliver|Thomas|Arthur|James|Edward|William|Harry|Alex|Fred|Microsoft George|Google UK English Male|UK English Male|British Male/i;
+      const indianMale = /Ravi|Amit|Arjun|Kunal|Raj|Vikram|Microsoft Ravi|Google Indian English Male|Indian English Male|en-IN Male/i;
+      const americanMale = /David|Mark|Matthew|John|Paul|Alex|Fred|Tom|Microsoft David|Microsoft Mark|Google US English Male|US English Male|American Male/i;
+      const female = /female|Aditi|Heera|Kavya|Lekha|Priya|Samantha|Serena|Kate|Susan|Victoria|Karen|Tessa|Zira|Jenny|Aria|Salli|Joanna|Kendra|Kimberly/i;
+
+      selectedVoiceGB =
+        voices.find(v => /^en-GB/i.test(v.lang) && britishMale.test(v.name)) ||
+        voices.find(v => /^en-GB/i.test(v.lang) && !female.test(v.name)) ||
+        voices.find(v => /^en-/i.test(v.lang) && britishMale.test(v.name)) ||
+        voices.find(v => /^en-GB/i.test(v.lang)) ||
+        voices.find(v => /^en-/i.test(v.lang)) ||
+        null;
+
+      selectedVoiceIN =
+        voices.find(v => /^en-IN/i.test(v.lang) && indianMale.test(v.name)) ||
+        voices.find(v => /^en-IN/i.test(v.lang) && !female.test(v.name)) ||
+        voices.find(v => /^en-/i.test(v.lang) && indianMale.test(v.name)) ||
+        voices.find(v => /^en-IN/i.test(v.lang)) ||
+        voices.find(v => /^en-/i.test(v.lang)) ||
+        null;
+
+      selectedVoiceUS =
+        // US voice: naturalness first. Do not force male if that makes the device choose a muffled voice.
+        voices.find(v => /^en-US/i.test(v.lang) && /Natural|Neural|Enhanced|Premium/i.test(v.name)) ||
+        voices.find(v => /^en-US/i.test(v.lang) && /Google US English|Google English United States|English United States/i.test(v.name)) ||
+        voices.find(v => /^en-US/i.test(v.lang) && !/compact|legacy|novelty|robot|whisper/i.test(v.name)) ||
+        // Male-ish fallback only after natural US candidates.
+        voices.find(v => /^en-US/i.test(v.lang) && /Mark|Matthew|John|Paul|Tom|Alex|Fred|Guy|Davis|Google US English Male|US English Male|American Male/i.test(v.name)) ||
+        null;
+    }
+
+    function getFilteredDeck() {
+      if (selectedCategory === "すべて") return cards.map((_, i) => i);
+      return cards.map((c, i) => c.category === selectedCategory ? i : -1).filter(i => i >= 0);
+    }
+
+    function randomFrom(arr, avoid = null) {
+      if (!arr.length) return 0;
+      if (arr.length === 1) return arr[0];
+      let next = arr[Math.floor(Math.random() * arr.length)];
+      let guard = 0;
+      while (next === avoid && guard < 12) {
+        next = arr[Math.floor(Math.random() * arr.length)];
+        guard++;
+      }
+      return next;
+    }
+
+    function chooseNextIndex() {
+      const deck = getFilteredDeck();
+
+      if (mode === "sequence") {
+        const pos = deck.indexOf(currentIndex);
+        return deck[(pos + 1 + deck.length) % deck.length] ?? deck[0] ?? 0;
+      }
+
+      if (mode === "category") {
+        const base = selectedCategory === "すべて"
+          ? cards.map((c, i) => c.category === cards[currentIndex].category ? i : -1).filter(i => i >= 0)
+          : deck;
+        return randomFrom(base, currentIndex);
+      }
+
+      return randomFrom(cards.map((_, i) => i), currentIndex);
+    }
+
+    function pushHistory() {
+      historyStack.push({ index: currentIndex, side });
+      if (historyStack.length > 80) historyStack.shift();
+    }
+
+    function advancePair() {
+      speechSynthesis?.cancel();
+      pushHistory();
+
+      if (side === "front") {
+        side = "answer";
+        slideRender();
+        return;
+      }
+
+      currentIndex = chooseNextIndex();
+      side = "front";
+      slideRender();
+    }
+
+    function backPage() {
+      speechSynthesis?.cancel();
+
+      if (historyStack.length) {
+        const prev = historyStack.pop();
+        currentIndex = prev.index;
+        side = prev.side;
+        flipRender();
+        return;
+      }
+
+      // Fallback when there is no explicit history yet.
+      if (side === "answer") {
+        side = "front";
+      } else {
+        const deck = getFilteredDeck();
+        const pos = deck.indexOf(currentIndex);
+        currentIndex = deck[(pos - 1 + deck.length) % deck.length] ?? currentIndex;
+        side = "answer";
+      }
+      flipRender();
+    }
+
+    function slideRender() {
+      const card = $("card");
+      card.classList.add("slide-up");
+      setTimeout(() => {
+        render();
+        card.classList.remove("slide-up");
+      }, 125);
+    }
+
+    function flipRender() {
+      const card = $("card");
+      card.classList.add("flip-soft");
+      setTimeout(() => {
+        render();
+        card.classList.remove("flip-soft");
+      }, 95);
+    }
+
+    function renderTabs() {
+      $("tabs").innerHTML = categories.map(cat =>
+        `<button class="tab ${cat === selectedCategory ? "active" : ""}" data-cat="${cat}">${cat}</button>`
+      ).join("");
+
+      document.querySelectorAll(".tab").forEach(btn => {
+        btn.addEventListener("click", () => {
+          selectedCategory = btn.dataset.cat;
+          const deck = getFilteredDeck();
+          if (!deck.includes(currentIndex)) currentIndex = randomFrom(deck);
+          side = "front";
+          historyStack = [];
+          renderTabs();
+          render();
+        });
+      });
+    }
+
+
+    function escapeHTML(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function markOnce(html, phrase) {
+      const escapedPhrase = escapeHTML(phrase);
+      const pattern = new RegExp(escapedPhrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
+      return html.replace(pattern, match => `<span class="softmark">${match}</span>`);
+    }
+
+    function markCore(c, text) {
+      let html = escapeHTML(text);
+      const markers = c.markers || [];
+      markers.forEach(m => { html = markOnce(html, m); });
+      return html;
+    }
+
+    function render() {
+      const c = cards[currentIndex];
+      const count = String(currentIndex + 1).padStart(2, "0");
+      const total = String(cards.length).padStart(2, "0");
+
+      if (side === "front") {
+        $("card").innerHTML = `
+          <div class="card-inner front has-sticker"><img class="travel-badge-sticker" src="assets/british_travel_badge.png" alt="">
+            <div class="card-head">
+              <span class="category-pill">${c.category}</span>
+              <span class="counter">${count} / ${total}</span>
+            </div>
+
+            <div class="question-wrap">
+              <div class="question-label">Question</div>
+              <div class="question-ja">${c.promptJa}</div>
+              <div class="situation">${c.situation}</div>
+              <div class="note-slot"></div>
+            </div>
+
+            <div class="tap-guide">
+              <span><strong>Tap</strong>：核表現の音声</span>
+              <span>↑：回答へ / ↓：戻る</span>
+            </div>
+          </div>
+        `;
+      } else {
+        $("card").innerHTML = `
+          <div class="card-inner answer">
+            <div class="card-head">
+              <span class="category-pill">${c.category}</span>
+              <span class="counter">${count} / ${total}</span>
+            </div>
+
+            <div class="answer-body">
+              <section class="answer-block" data-speak="coreText" data-label="Pattern">
+                <div class="core-en">${c.coreText}</div>
+                <div class="kana">${c.coreKana}</div>
+                <div class="ja">${c.coreJa}</div>
+              </section>
+
+              <section class="answer-block" data-speak="businessText" data-label="Business">
+                <div class="business-en">${markCore(c, c.businessText)}</div>
+                <div class="ja">${c.businessJa}</div>
+              </section>
+
+              <section class="answer-block" data-speak="commsText" data-label="Comms">
+                <div class="comms-en">${markCore(c, c.commsText)}</div>
+                <div class="ja">${c.commsJa}</div>
+              </section>
+            </div>
+
+            <div class="answer-footer">
+              <span>左50%：British / 右中：Indian / 右端：American　｜　↑：次 / ↓：戻る</span>
+              <span class="mini-controls">
+                <button class="small-btn" id="backBtn" type="button">問題</button>
+                <button class="small-btn" id="nextBtn" type="button">次</button>
+              </span>
+            </div>
+          </div>
+        `;
+
+        $("backBtn").addEventListener("click", (e) => {
+          e.stopPropagation();
+          backPage();
+        });
+
+        $("nextBtn").addEventListener("click", (e) => {
+          e.stopPropagation();
+          advancePair();
+        });
+      }
+    }
+
+    function showToast(message) {
+      // Audio feedback popup intentionally disabled.
+    }
+
+    function accentFromEvent(e) {
+      const x = e.clientX ?? (e.changedTouches && e.changedTouches[0]?.clientX) ?? window.innerWidth / 2;
+      const ratio = x / window.innerWidth;
+      if (ratio < 0.50) return "en-GB";
+      if (ratio < 0.75) return "en-IN";
+      return "en-US";
+    }
+
+    function prepareSpeechText(text) {
+      return String(text)
+        // Some device TTS engines read trailing dots as odd clicks/noises.
+        // Keep the card display unchanged, but make audio clean.
+        .replace(/\.{3,}/g, "")
+        .replace(/…/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function speak(text, accent) {
+      if (!("speechSynthesis" in window)) {
+        showToast("Speech audio is not supported.");
+        return;
+      }
+
+      speechSynthesis.cancel();
+      loadVoices();
+      lastAccent = accent;
+
+      const isIndian = accent === "en-IN";
+      const isAmerican = accent === "en-US";
+      const u = new SpeechSynthesisUtterance(prepareSpeechText(text));
+      u.lang = isAmerican ? "en-US" : (isIndian ? "en-IN" : "en-GB");
+      u.voice = isAmerican ? selectedVoiceUS : (isIndian ? selectedVoiceIN : selectedVoiceGB);
+      // US voice: naturalness first. Keep pitch near default and avoid over-speeding.
+      u.rate = isAmerican ? 1.03 : (isIndian ? 1.10 : 1.04);
+      u.pitch = isAmerican ? 1.00 : (isIndian ? 0.80 : 0.76);
+      u.volume = 1;
+
+      // If no clearly natural US voice is found, let the browser/OS choose its default en-US voice.
+      if (isAmerican && !selectedVoiceUS) {
+        u.voice = null;
+      }
+
+      u.onerror = () => showToast("Audio could not start. Tap again.");
+      speechSynthesis.speak(u);
+    }
+
+    function handleCardTap(e) {
+      if (Date.now() < suppressClickUntil) return;
+
+      const c = cards[currentIndex];
+      const accent = accentFromEvent(e);
+
+      if (side === "front") {
+        speak(c.coreText, accent);
+        return;
+      }
+
+      const block = e.target.closest(".answer-block");
+      if (!block) return;
+      const key = block.dataset.speak;
+      speak(c[key], accent);
+    }
+
+    function handleTouchStart(e) {
+      const t = e.touches[0];
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+      touchStartT = Date.now();
+    }
+
+    function handleTouchEnd(e) {
+      const t = e.changedTouches[0];
+      const dx = t.clientX - touchStartX;
+      const dy = t.clientY - touchStartY;
+      const dt = Date.now() - touchStartT;
+
+      if (Math.abs(dy) > 54 && Math.abs(dy) > Math.abs(dx) * 1.15 && dt < 900) {
+        suppressClickUntil = Date.now() + 260;
+        if (dy < 0) advancePair();
+        if (dy > 0) backPage();
+        return;
+      }
+
+      if (Math.abs(dx) < 14 && Math.abs(dy) < 14) {
+        handleCardTap(e);
+      }
+    }
+
+    document.querySelectorAll(".mode-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        mode = btn.dataset.mode;
+        document.querySelectorAll(".mode-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        showToast(btn.textContent);
+      });
+    });
+
+    $("card").addEventListener("click", handleCardTap);
+    $("card").addEventListener("touchstart", handleTouchStart, { passive:true });
+    $("card").addEventListener("touchend", handleTouchEnd, { passive:true });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowUp") advancePair();
+      if (e.key === "ArrowDown") backPage();
+      if (e.key === " " || e.key === "Enter") {
+        if (side === "front") {
+          speak(cards[currentIndex].coreText, lastAccent);
+        } else {
+          speak(cards[currentIndex].coreText, lastAccent);
+        }
+      }
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) speechSynthesis?.cancel();
+    });
+
+    if ("speechSynthesis" in window) {
+      loadVoices();
+      speechSynthesis.onvoiceschanged = loadVoices;
+    }
+
+    renderTabs();
+    render();
+  </script>
+</body>
+</html>

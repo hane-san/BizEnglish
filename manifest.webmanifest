@@ -1,0 +1,17 @@
+{
+  "name": "BizEngStudy",
+  "short_name": "BizEngStudy",
+  "description": "British business English pattern cards with UK / Indian / US voice zones.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4e1bf",
+  "theme_color": "#263853",
+  "icons": [
+    {
+      "src": "assets/british_travel_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

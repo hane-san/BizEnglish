@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BizEngStudy card",
+  "type": "object",
+  "required": [
+    "category",
+    "promptJa",
+    "situation",
+    "coreText",
+    "coreKana",
+    "coreJa",
+    "businessText",
+    "businessJa",
+    "commsText",
+    "commsJa",
+    "markers"
+  ],
+  "properties": {
+    "category": {
+      "type": "string"
+    },
+    "promptJa": {
+      "type": "string"
+    },
+    "situation": {
+      "type": "string"
+    },
+    "hint": {
+      "type": "string"
+    },
+    "coreText": {
+      "type": "string"
+    },
+    "coreKana": {
+      "type": "string"
+    },
+    "coreJa": {
+      "type": "string"
+    },
+    "businessText": {
+      "type": "string"
+    },
+    "businessJa": {
+      "type": "string"
+    },
+    "commsText": {
+      "type": "string"
+    },
+    "commsJa": {
+      "type": "string"
+    },
+    "markers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

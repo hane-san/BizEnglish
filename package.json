@@ -1,0 +1,17 @@
+{
+  "name": "bizengstudy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "British business English study cards with three English voice zones.",
+  "scripts": {
+    "validate": "node tools/validate-cards.cjs"
+  },
+  "keywords": [
+    "english",
+    "study",
+    "cards",
+    "tts",
+    "business-english"
+  ],
+  "license": "MIT"
+}
