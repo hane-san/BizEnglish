@@ -9,4 +9,4 @@
   ].join('');
   document.head.appendChild(style);
 })();
-document.write('<script src="../cards.js?v=20260630-2"><\\/script>');
+document.write('<script src="../cards.js?v=20260630-3"></script>');
