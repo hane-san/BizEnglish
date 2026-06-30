@@ -1,12 +1,12 @@
 // Compatibility loader for GitHub Pages uploads from iPhone.
-// index.html expects src/cards.js, while cards.js may live at the repository root.
+// index.html expects src/cards.js, while the actual card data is cards.js at the repository root.
 (function(){
   var style = document.createElement('style');
   style.textContent = [
-    '.travel-badge-sticker{top:12px !important;}',
-    '@media (max-width: 520px){.travel-badge-sticker{top:9px !important; right:12px !important;}}',
-    '@media (max-height: 720px){.travel-badge-sticker{top:8px !important; right:10px !important;}}'
+    '.top-mascot{top:5px !important;}',
+    '@media (max-height: 720px){.top-mascot{top:4px !important;}}',
+    '@media (max-width: 390px){.top-mascot{top:5px !important;}}'
   ].join('');
   document.head.appendChild(style);
 })();
-document.write('<script src="../cards.js?v=20260630-3"></script>');
+document.write('<script src="cards.js?v=20260630-4"></script>');
