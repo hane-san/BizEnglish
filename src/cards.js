@@ -1,6 +1,8 @@
 // Compatibility loader for GitHub Pages uploads from iPhone.
 // index.html expects src/cards.js, while the actual card data is cards.js at the repository root.
 (function(){
+  var appIcon = 'assets/0aff37b4e965a9dd53c7f53dbc6916d8616f23dd13be27db22e1c9f7d219120f%20%281%29.png';
+
   var style = document.createElement('style');
   style.textContent = [
     '.top-mascot,.travel-badge-sticker{display:none !important;}',
@@ -14,6 +16,19 @@
     '@media (max-height:720px){.card::after{width:min(38%,118px);opacity:.035;right:10px;bottom:10px;}.question-ja{font-size:clamp(15.8px,4.35vw,22px) !important;line-height:1.36 !important;}.question-wrap{gap:11px !important;padding-top:clamp(14px,3.4svh,26px) !important;}}'
   ].join('');
   document.head.appendChild(style);
+
+  function setIcon(rel) {
+    var link = document.querySelector('link[rel="' + rel + '"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = rel;
+      document.head.appendChild(link);
+    }
+    link.href = appIcon + '?v=20260630-10';
+    link.type = 'image/png';
+  }
+  setIcon('icon');
+  setIcon('apple-touch-icon');
 })();
-document.write('<script src="cards.js?v=20260630-6"></script>');
+document.write('<script src="cards.js?v=20260630-10"></script>');
 document.write('<script>(function(){var cards=window.BIZ_ENG_CARDS||[];cards.forEach(function(c){if(c.coreJa){c.promptJa=c.coreJa;}});})();</script>');
