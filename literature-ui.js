@@ -1,8 +1,10 @@
 (() => {
   const STORAGE_ONE = 'lit-onehand';
   const accent = 'en-GB';
-  const DOWN_PAIR_MS = 2200;
   const FLICK_MIN = 46;
+  const TAP_MAX_MOVE = 18;
+  const TAP_MAX_MS = 700;
+
   let oneHand = localStorage.getItem(STORAGE_ONE) === '1';
   let currentIndex = 0;
   let restoreKey = '';
@@ -10,7 +12,6 @@
   let decorateTimer = null;
   let navTimer = null;
   let touchStart = null;
-  let downArmedAt = 0;
   let suppressClickUntil = 0;
 
   const controls = document.querySelector('.controls-in');
@@ -85,29 +86,35 @@
     const rows = getRows();
     const { s } = currentData();
     if (!rows.length || !s?.rows?.length) return;
+
     index = Math.max(0, Math.min(index, Math.min(rows.length, s.rows.length) - 1));
     stopSpeech();
     markCurrent(index);
     centreRow(index, smooth);
+
     navTimer = setTimeout(() => {
       const row = getRows()[index];
       const en = row?.querySelector('.en');
       const text = s.rows[index]?.[1];
       if (en && text && typeof speak === 'function') speak(text, accent, en, '全文');
     }, smooth ? 190 : 0);
+
     updateMediaSession();
   }
 
   function moveSection(direction, targetEdge) {
     const { w, s } = currentData();
     if (!w || !s) return false;
+
     const idx = w.sections.findIndex(x => x.id === s.id);
     const next = idx + direction;
     if (next < 0 || next >= w.sections.length) return false;
+
     const secSelect = document.getElementById('sectionSelect');
     stopSpeech();
     secSelect.value = w.sections[next].id;
     if (typeof render === 'function') render();
+
     requestAnimationFrame(() => requestAnimationFrame(() => {
       decorate(false);
       const rows = getRows();
@@ -118,7 +125,6 @@
   }
 
   function nextAndPlay() {
-    downArmedAt = 0;
     const rows = getRows();
     if (!rows.length) return;
     if (currentIndex < rows.length - 1) playCurrent(currentIndex + 1);
@@ -126,20 +132,12 @@
   }
 
   function previousAndPlay() {
-    downArmedAt = 0;
     if (currentIndex > 0) playCurrent(currentIndex - 1);
     else moveSection(-1, 'last') || playCurrent(0);
   }
 
-  function downFlickAction() {
-    const now = Date.now();
-    if (downArmedAt && now - downArmedAt <= DOWN_PAIR_MS) {
-      downArmedAt = 0;
-      previousAndPlay();
-    } else {
-      downArmedAt = now;
-      playCurrent(currentIndex);
-    }
+  function replayCurrent() {
+    playCurrent(currentIndex);
   }
 
   function setMediaHandlers(on) {
@@ -147,8 +145,8 @@
     const set = (name, fn) => {
       try { navigator.mediaSession.setActionHandler(name, on ? fn : null); } catch (_) {}
     };
-    set('play', () => playCurrent(currentIndex));
-    set('pause', () => stopSpeech());
+    set('play', replayCurrent);
+    set('pause', stopSpeech);
     set('previoustrack', previousAndPlay);
     set('nexttrack', nextAndPlay);
   }
@@ -168,12 +166,13 @@
 
   function setOneHand(on, persist = true) {
     oneHand = !!on;
-    downArmedAt = 0;
     touchStart = null;
     if (persist) localStorage.setItem(STORAGE_ONE, oneHand ? '1' : '0');
+
     toggle.classList.toggle('active', oneHand);
     toggle.setAttribute('aria-pressed', oneHand ? 'true' : 'false');
     document.body.classList.toggle('onehand-on', oneHand);
+
     if (oneHand) {
       currentIndex = savedIndex();
       markCurrent(currentIndex);
@@ -218,7 +217,7 @@
   }
 
   function isControlTarget(target) {
-    return !!target.closest('.controls, header, select, button, .rate');
+    return !!target.closest('.controls, select, button, .rate');
   }
 
   function onTouchStart(e) {
@@ -242,10 +241,18 @@
     const dy = t.clientY - touchStart.y;
     const elapsed = performance.now() - touchStart.time;
     touchStart = null;
+
+    const distance = Math.hypot(dx, dy);
+    suppressClickUntil = Date.now() + 500;
+
+    if (elapsed <= TAP_MAX_MS && distance <= TAP_MAX_MOVE) {
+      replayCurrent();
+      return;
+    }
+
     if (elapsed > 1200 || Math.abs(dy) < FLICK_MIN || Math.abs(dy) <= Math.abs(dx) * 1.15) return;
-    suppressClickUntil = Date.now() + 450;
     if (dy < 0) nextAndPlay();
-    else downFlickAction();
+    else previousAndPlay();
   }
 
   const observer = new MutationObserver(() => {
@@ -255,20 +262,21 @@
   observer.observe(content, { childList: true, subtree: false });
 
   content.addEventListener('click', (e) => {
-    if (oneHand && Date.now() < suppressClickUntil) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      return;
-    }
+    if (oneHand) return;
     const row = e.target.closest('.row');
     if (!row || !content.contains(row)) return;
     const idx = Number(row.dataset.ohIndex ?? getRows().indexOf(row));
     if (Number.isFinite(idx) && idx >= 0) {
       currentIndex = idx;
       localStorage.setItem(keyNow('lit-row'), String(idx));
-      if (oneHand) markCurrent(idx);
-      updateMediaSession();
     }
+  }, true);
+
+  document.addEventListener('click', (e) => {
+    if (!oneHand || isControlTarget(e.target)) return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    if (Date.now() >= suppressClickUntil) replayCurrent();
   }, true);
 
   document.addEventListener('touchstart', onTouchStart, { passive: true });
@@ -289,12 +297,10 @@
 
   document.getElementById('workSelect')?.addEventListener('change', () => {
     restoreKey = '';
-    downArmedAt = 0;
     setTimeout(() => decorate(true), 0);
   });
   document.getElementById('sectionSelect')?.addEventListener('change', () => {
     restoreKey = '';
-    downArmedAt = 0;
     setTimeout(() => decorate(true), 0);
   });
 
