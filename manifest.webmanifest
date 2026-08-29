@@ -1,11 +1,11 @@
 {
-  "name": "英国英語リスニング432",
-  "short_name": "英語432",
-  "description": "英国ビジネス英語と旅行・文化英語の全432文を、UK・US・India音声で練習できるカードアプリ。",
+  "name": "English through Stories",
+  "short_name": "Stories English",
+  "description": "青空文庫作品を日本語とModern British Englishで読み、UK/US音声で反復できる文学英語リーダー。",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f7f1e7",
-  "theme_color": "#17233d",
+  "background_color": "#f3eadf",
+  "theme_color": "#5a4034",
   "icons": [
     {
       "src": "assets/0aff37b4e965a9dd53c7f53dbc6916d8616f23dd13be27db22e1c9f7d219120f%20%281%29.png",
