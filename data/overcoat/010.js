@@ -1,0 +1,28 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:010']={id:'010',rows:[
+[String.raw`控室で外套を探したが、それは痛ましくも床の上へ落ちていた。`,String.raw`He found his coat lying on the floor in the entrance hall.`],
+[String.raw`よく振って埃りをすっかり払い落とすと、それを肩にひっかけて、彼は階段を降りて表へ出た。`,String.raw`He shook off the dust, put it on and went outside.`],
+[String.raw`アカーキイ・アカーキエウィッチははなはだ上機嫌で歩いていた。`,String.raw`Akaky Akakievich was walking home in an unusually cheerful mood.`],
+[String.raw`間もなく、彼の目の前には、昼間ですらあまり賑やかではなく、いわんや夜はなおさらさびしい通りが現われた。`,String.raw`Before long, he reached streets that were quiet even by day and almost deserted at night.`],
+[String.raw`やがて彼は、向こう側にある家がやっと見える、まるでものすごい荒野みたいに思われる広場で街通りが中断されている場所へと近づいた。`,String.raw`He approached a large open square that felt almost like an empty wilderness.`],
+[String.raw`ここまで来るとアカーキイ・アカーキエウィッチの朗らかさも何だかひどく影が薄くなった。`,String.raw`By this point, his good mood had begun to fade.`],
+[String.raw`彼はその心に何か不吉なことでも予感するもののように、我にもない一種の恐怖を覚えながらその広場へ足を踏み入れた。`,String.raw`He entered the square with a growing sense that something was wrong.`],
+[String.raw`後ろを振り返ったり、左右を見回したりしたが――あたりはまるで海のようだった。`,String.raw`He looked behind him and from side to side, but there was open space in every direction.`],
+[String.raw`「いや、やはり見ないほうがいい。」`,String.raw`“No, perhaps it is better not to look.”`],
+[String.raw`そう考えると彼は目をつぶって歩いて行った。`,String.raw`With that thought, he walked on with his eyes closed.`],
+[String.raw`目をあげたとたんに、突然、彼の面前、ほとんど鼻のさきに、何者か、髭をはやしたてあいがにゅっと立ちはだかっているのを見た。`,String.raw`When he looked up again, two bearded men were suddenly standing directly in front of him.`],
+[String.raw`しかしそれがはたして何者やら、彼にはそれを見分けるだけの余裕もなかった。`,String.raw`He had no time to work out who they were.`],
+[String.raw`「やい、この外套はこちとらのもんだぞ！」と、その中の一人が彼の襟髪をひっつかみざま、雷のような声でどなった。`,String.raw`“That coat belongs to us!” one of them shouted, grabbing him by the collar.`],
+[String.raw`アカーキイ・アカーキエウィッチは思わず「助けて！」と悲鳴をあげようとした。`,String.raw`Akaky Akakievich tried to shout for help.`],
+[String.raw`その時はやく、もう一人の男が「声をたててみやがれ！」とばかりに、大きなこぶしを彼の口もとへ突きつけた。`,String.raw`The other man immediately raised a huge fist to silence him.`],
+[String.raw`アカーキイ・アカーキエウィッチは外套をはぎとられ、雪の上へあお向けに顛倒すると、それきり知覚を失ってしまった。`,String.raw`His coat was torn off him, he fell backwards into the snow and lost consciousness.`],
+[String.raw`しばらくして意識を取り戻して起ちあがった時には、もう誰もいなかった。`,String.raw`When he regained consciousness, the men had gone.`],
+[String.raw`彼はその広っぱの寒いこと、外套のなくなっていることを感じて、わめきはじめた。`,String.raw`Realising how cold it was and that the coat had disappeared, he began shouting for help.`],
+[String.raw`絶望のあまり彼はひっきりなしにわめきたてながら、広場を横ぎってまっしぐらに交番をめがけて駈け出した。`,String.raw`In desperation, he ran across the square towards the police post.`],
+[String.raw`アカーキイ・アカーキエウィッチは巡査のところへ駆けつけると、息ぎれで声もしどろもどろに、君はいねむりなどして注意を怠っているから、人が追剥にかかっても知らないでいるんだ、とどなりだした。`,String.raw`Out of breath, he accused the officer of **failing to pay attention** while a robbery was taking place.`],
+[String.raw`巡査は、いっこう何も気がつかなかったが、なるほど広場の真中で二人の男があなたを呼びとめたのは知っている、けれど多分あれはお友だちだろうと思ったと答えた。`,String.raw`The officer replied that he had seen two men stop him but **had assumed they were his friends**.`],
+[String.raw`ここでいたずらにぐずぐずいうよりは、明日警部のところへ訴えて出れば、外套を奪った犯人を捜査してくれると言った。`,String.raw`Rather than argue there, he said, Akaky Akakievich should **file a report with the inspector** the next day so the matter could be investigated.`],
+[String.raw`アカーキイ・アカーキエウィッチはまったくとり乱した姿で家へ駆け戻った。`,String.raw`Akaky Akakievich ran home in a state of complete distress.`],
+[String.raw`彼が一部始終を話すと、老婆はぽんと手をうって、それならまっすぐに本署へ行かなければだめだ、と言った。`,String.raw`When he explained what had happened, his landlady said he needed to go directly to the main police office.`],
+[String.raw`駐在所などではいい加減なことを言って口約束だけはしても、埒があかない、やはり一番いいのはじかに署長のところへ行くことだ、というのだった。`,String.raw`Local officers, she said, might make promises without taking action; the best approach was to **go directly to the person in charge**.`]
+]};
