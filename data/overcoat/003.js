@@ -1,0 +1,28 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:003']={id:'003',rows:[
+[String.raw`こんなことは彼の執務にはいっこうさしつかえなかったのである。`,String.raw`None of this **interfered with his work**.`],
+[String.raw`そうしたいろんなうるさい邪魔をされながらも、彼はただの一つも書類に書きそこないをしなかった。`,String.raw`Despite all the distractions, he never made a single mistake in the documents he copied.`],
+[String.raw`ただあまりいたずらが過ぎたり、仕事をさせまいとして肘を突っついたりされる時にだけ、彼は初めて口を開くのである。`,String.raw`Only when the teasing went too far, or someone nudged his elbow to stop him working, would he finally speak.`],
+[String.raw`「かまわないで下さい！`,String.raw`“Please leave me alone!`],
+[String.raw`何だってそんなに人を馬鹿にするんです？」`,String.raw`Why do you have to make fun of me like this?”`],
+[String.raw`それにしても、彼の言葉とその音声とには、一種異様な響きがあった。`,String.raw`There was, however, something unusual in the way he said it.`],
+[String.raw`それには、何かしら人の心に訴えるものがこもっていたので、つい近ごろ任命されたばかりの一人の若い男などは、見様見真似で、ふと彼をからかおうとしかけたけれど、と胸を突かれたように、急にそれを中止したほどで、それ以来この若者の目には、あたかもすべてが一変して、前とは全然別なものに見えるようになったくらいである。`,String.raw`There was something in his voice that appealed directly to the listener, and one recently appointed young official, who had been about to join in the teasing, suddenly stopped as if the words had struck him; from that moment, he **began to see the whole situation differently**.`],
+[String.raw`彼がそれまで如才のない世慣れた人たちだと思って交際していた同僚たちから、ある超自然的な力が彼をおし隔ててしまった。`,String.raw`It was as though some invisible force had separated him from the colleagues he had previously regarded as polished and worldly people.`],
+[String.raw`それから長いあいだというもの、きわめて愉快な時にさえも、あの「かまわないで下さい！　何だってそう人を馬鹿にするんです？」と、胸に滲み入るような音をあげた、額の禿げあがった、ちんちくりんな官吏の姿が思い出されてならなかった。`,String.raw`For a long time afterwards, even in his happiest moments, he could not forget the small, balding official and the painful voice saying, “Please leave me alone. Why do you make fun of me?”`],
+[String.raw`しかもその胸に滲み入るような言葉の中から、「わたしだって君の同胞なんだよ。」という別な言葉が響いてきた。`,String.raw`And behind those words he seemed to hear another message: “I am a human being just like you.”`],
+[String.raw`で、哀れなこの若者は思わず顔をおおった。`,String.raw`The young man would cover his face in shame.`],
+[String.raw`その後ながい生涯のあいだにも幾度となく、人間の内心にはいかに多くの薄情なものがあり、洗練された教養ある如才なさの中に、しかも、ああ！　世間で上品な清廉の士とみなされているような人間の内部にすら、いかに多くの凶悪な野性が潜んでいるかを見て、彼は戦慄を禁じ得なかったものである。`,String.raw`Many times later in life, he was deeply disturbed to discover how much cruelty can exist beneath polished manners and respectable appearances.`],
+[String.raw`こんなに自分の職務を後生大事に生きてきた人間がはたしてどこにあるだろうか。`,String.raw`Where could one find anyone so completely devoted to his duties?`],
+[String.raw`熱心に勤めていたというだけでは言い足りない。`,String.raw`To say that he worked hard would not be enough.`],
+[String.raw`それどころか、彼は勤務に熱愛をもっていたのである。`,String.raw`He genuinely loved his work.`],
+[String.raw`彼にはこの写字という仕事の中に、千変万化の、楽しい一種の世界が見えていたのである。`,String.raw`In the routine task of copying documents, he found an endlessly varied and enjoyable world.`],
+[String.raw`彼の顔には、いつも喜びの色が浮かんでいた。`,String.raw`There was always a look of pleasure on his face.`],
+[String.raw`ある種の文字にいたっては非常なお気に入りで、そういう文字にでくわすというと、もう我を忘れてしまい、にやにや笑ったりめくばせをしたり、おまけに唇までも手伝いに引っぱり出すので、その顔さえ見ていれば、彼のペンが書き表わしているあらゆる文字を一々読みとることもできそうであった。`,String.raw`He had particular favourite letters, and when he came across one he became so absorbed that he smiled, moved his eyes and even shaped the letters with his lips as he wrote.`],
+[String.raw`もしも彼の精励恪勤に相応した報酬が与えられたとしたら、彼自身はびっくり仰天したことであろうけれど、おそらく五等官には補せられていたにちがいない。`,String.raw`If his reward had genuinely reflected his diligence, he might well have reached the fifth rank — though the idea would probably have astonished him.`],
+[String.raw`とはいえ、彼に対して何の注意もはらわれなかったというわけではない。`,String.raw`That did not mean, however, that no one ever **took notice of his work**.`],
+[String.raw`ある長官は親切な人で、彼の永年の精励に報いんがためにありきたりの写字よりは何かもう少し意義のある仕事をさせるようにと命じた。`,String.raw`One kindly senior official decided to reward his years of diligent service by giving him something **slightly more demanding than his usual work**.`],
+[String.raw`そこで、すでに作製ずみの書類の中から、他の役所へ送るための一つの報告書をつくる仕事が彼に命ぜられたのである。`,String.raw`He was asked to prepare a report for another department using an existing document.`],
+[String.raw`それは単に表題を書き改めて、ところどころ、動詞を一人称から三人称に置きかえるだけの仕事であった。`,String.raw`The task involved little more than changing the heading and, in a few places, converting verbs from the first person to the third.`],
+[String.raw`ところが、彼にはそれがもってのほかの大仕事で、すっかり汗だくになり、額を拭き拭き、とうとうしまいには、「いや、これよりわたしにはやっぱり何か写しものをさせて下さい。」と悲鳴をあげてしまった。`,String.raw`Yet he found it overwhelmingly difficult; after sweating over it and repeatedly wiping his forehead, he finally begged, “No, please **let me go back to** copying something instead.”`],
+[String.raw`で、彼はずっとその時以来、あいも変らぬ筆生として残されたのである。`,String.raw`From then on, he remained in the same copying role.`]
+]};
