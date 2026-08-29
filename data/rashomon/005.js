@@ -1,0 +1,25 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['rashomon:005']={id:'005',rows:[
+[String.raw`下人は、太刀を鞘におさめて、その太刀の柄を左の手でおさえながら、冷然として、この話を聞いていた。`,String.raw`The servant put his sword back in its scabbard and listened to her calmly, keeping his left hand on the hilt.`],
+[String.raw`勿論、右の手では、赤く頬に膿を持った大きな面皰を気にしながら、聞いているのである。`,String.raw`As he listened, he was still absent-mindedly touching the swollen spot on his right cheek.`],
+[String.raw`しかし、これを聞いている中に、下人の心には、ある勇気が生まれて来た。`,String.raw`But as he listened, a new kind of courage began to grow in him.`],
+[String.raw`それは、さっき門の下で、この男には欠けていた勇気である。`,String.raw`It was precisely the courage he had lacked beneath the gate.`],
+[String.raw`そうして、またさっきこの門の上へ上って、この老婆を捕えた時の勇気とは、全然、反対な方向に動こうとする勇気である。`,String.raw`And it was moving in exactly the opposite direction from the courage that had driven him to confront the old woman.`],
+[String.raw`下人は、飢死をするか盗人になるかに、迷わなかったばかりではない。`,String.raw`He was no longer hesitating between starvation and becoming a thief.`],
+[String.raw`その時のこの男の心もちから云えば、飢死などと云う事は、ほとんど、考える事さえ出来ないほど、意識の外に追い出されていた。`,String.raw`At that moment, starvation had been pushed so completely out of his mind that it was barely an option at all.`],
+[String.raw`「きっと、そうか。」`,String.raw`“Are you sure that's how you see it?”`],
+[String.raw`老婆の話が完ると、下人は嘲るような声で念を押した。`,String.raw`When the old woman had finished, the servant **pressed her to confirm it**, his voice openly mocking.`],
+[String.raw`そうして、一足前へ出ると、不意に右の手を面皰から離して、老婆の襟上をつかみながら、噛みつくようにこう云った。`,String.raw`He stepped forward, took his hand away from his cheek, grabbed the old woman by the collar and spoke sharply.`],
+[String.raw`「では、己が引剥をしようと恨むまいな。`,String.raw`“Then you won't blame me if I rob you.`],
+[String.raw`己もそうしなければ、飢死をする体なのだ。」`,String.raw`**The same applies to me**: if I don't do this, I'll starve.”`],
+[String.raw`下人は、すばやく、老婆の着物を剥ぎとった。`,String.raw`The servant quickly stripped the old woman of her robe.`],
+[String.raw`それから、足にしがみつこうとする老婆を、手荒く死骸の上へ蹴倒した。`,String.raw`When she tried to cling to his legs, he kicked her roughly back onto the bodies.`],
+[String.raw`梯子の口までは、僅に五歩を数えるばかりである。`,String.raw`The opening to the ladder was only five steps away.`],
+[String.raw`下人は、剥ぎとった檜皮色の着物をわきにかかえて、またたく間に急な梯子を夜の底へかけ下りた。`,String.raw`With the dark brown robe under his arm, the servant ran down the steep ladder and disappeared into the night.`],
+[String.raw`しばらく、死んだように倒れていた老婆が、死骸の中から、その裸の体を起したのは、それから間もなくの事である。`,String.raw`Before long, the old woman, who had lain motionless among the bodies, slowly raised her naked body.`],
+[String.raw`老婆はつぶやくような、うめくような声を立てながら、まだ燃えている火の光をたよりに、梯子の口まで、這って行った。`,String.raw`Muttering and groaning, she crawled towards the ladder by the light of the still-burning fire.`],
+[String.raw`そうして、そこから、短い白髪を倒にして、門の下を覗きこんだ。`,String.raw`She leaned over the opening, her short white hair hanging down, and looked beneath the gate.`],
+[String.raw`外には、ただ、黒洞々たる夜があるばかりである。`,String.raw`Outside there was nothing but deep, empty darkness.`],
+[String.raw`下人の行方は、誰も知らない。`,String.raw`No one knows what became of the servant.`],
+[String.raw`（大正四年九月）`,String.raw`(September 1915)`]
+]};
