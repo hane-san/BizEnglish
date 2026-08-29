@@ -1,0 +1,26 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:011']={id:'011',rows:[
+[String.raw`翌る朝はやく、彼は署長のところへ出かけて行った。`,String.raw`Early the next morning, he went to see the police chief.`],
+[String.raw`しかし、まだ眠っているという話だったので、あらためて十時に行ったが、またもや「お寝みです。」といわれた。`,String.raw`He was told that the chief was still asleep, and when he returned at ten he received the same answer.`],
+[String.raw`十一時にまた行ってみると、今度は「署長は、留守です。」との話。`,String.raw`When he returned again at eleven, he was told that the chief was out.`],
+[String.raw`そこでまた昼飯どきに行くと――玄関にいた書記たちが、いっかな通そうともしないで、どんな用があるのか、何の必要があって来たのか、いったい何事が出来したのかと、うるさくそれを問いそうとした。`,String.raw`When he came back at lunchtime, the clerks at the entrance refused to let him through and demanded to know exactly why he was there.`],
+[String.raw`そこでさすがのアカーキイ・アカーキエウィッチもついに一世一代の気概を見せる心になって、自分はじきじき署長に面会する必要があって来たのだ、君たちには自分を通さない権利などはあり得ない、と断乎として言い放った。`,String.raw`At last, Akaky Akakievich firmly stated that he **needed to speak to the chief directly** and that they had no authority to block him.`],
+[String.raw`それには書記連も一言も返すことばもなく、その中の一人が署長を呼びに行った。`,String.raw`The clerks had no reply, and one of them went to get the chief.`],
+[String.raw`署長は外套追剥の話を何かひどく変なふうに解釈した。`,String.raw`The chief interpreted the report in a very strange way.`],
+[String.raw`彼は事件の要点にはいっこう注意を向けないで、アカーキイ・アカーキエウィッチに向かって、いったいどうしてそんなに遅く帰ったのか、どこかいかがわしい家へでも寄っていたのではないか、などと問いしはじめた。`,String.raw`Instead of **focusing on the key issue**, he questioned why Akaky Akakievich had been out so late and whether he had been somewhere disreputable.`],
+[String.raw`それでアカーキイ・アカーキエウィッチはすっかりめんくらってしまい、外套の一件が適当な措置をとられるものやらどうやら、さっぱりわからないままで、そこを出てしまった。`,String.raw`Akaky Akakievich left completely confused and with no idea whether **any appropriate action would be taken**.`],
+[String.raw`この日いちにち、彼はとうとう役所へ出勤しなかった。`,String.raw`He did not go to work that day.`],
+[String.raw`翌る日、彼はまっさおな顔をして、今はいっそうみすぼらしく見えるくだんの「半纏」を着て出勤した。`,String.raw`The next day, he returned looking pale and wearing his old, now even more miserable coat.`],
+[String.raw`外套を強奪された話は、多くの者の心を動かした。`,String.raw`The story of the stolen coat moved many of his colleagues.`],
+[String.raw`で早速、彼のために義捐金を集めることに話がきまった。`,String.raw`They quickly agreed to **raise some money for him**.`],
+[String.raw`が、いざ集めてみると、それはきわめて小額であった。`,String.raw`In practice, however, the amount collected was very small.`],
+[String.raw`というのは、役人連中はそれでなくてさえ、やれ局長の肖像のための寄付だとか、やれ何とかいう本を、著者の友人である課長のきもいりで買わされるとかで、かなり多額の出費をしていたからである。`,String.raw`The officials already had several other demands on their money, including contributions and purchases encouraged by senior colleagues.`],
+[String.raw`そんなわけで、集まった醵金は実に瑣々たるものにすぎなかった。`,String.raw`As a result, the final contribution was insignificant.`],
+[String.raw`そこで或る一人の男がつくづくと同情の念に動かされて、せめて良い助言でもしてアカーキイ・アカーキエウィッチを助けてやりたいものと思った。`,String.raw`One colleague, genuinely sympathetic, decided that the least he could do was offer some useful advice.`],
+[String.raw`駐在所へなぞ行くことじゃない、よしんば駐在所がなんとかしてその外套を探し出したところで、それがこちらのものにちがいないという法律的な証拠を提出しないかぎり外套はやはり警察に留め置きということになるからだ。`,String.raw`He advised against relying on the local police, since even if they found the coat Akaky Akakievich might still have to **provide legal proof of ownership**.`],
+[String.raw`そこで何よりいい方法は、或る有力な人物にたよることだ。`,String.raw`The best course, he said, was to approach an influential official.`],
+[String.raw`その有力な人物なら、あちこち適当な方面と連絡をとって、この訴えが上首尾に取り運ばれるように尽力してくれることができるから、と言った。`,String.raw`Such a person could **contact the relevant authorities** and help ensure that the case was handled properly.`],
+[String.raw`なんともしかたがないので、アカーキイ・アカーキエウィッチはその有力な人物のところへ出かける決心をした。`,String.raw`**With no better option**, Akaky Akakievich decided to approach the influential official.`],
+[String.raw`ところで、その有力な人物の職掌が何で、どんな役目についていたか、そのへんのことは今日までわかっていない。`,String.raw`Exactly what this influential official did, or what his responsibilities were, has never been entirely clear.`],
+[String.raw`ただこの有力な人物も、つい最近に有力者になったばかりで、それまではいっこう無力な人間にすぎなかったということを知っておく必要がある。`,String.raw`What matters is that he had only recently become influential and, until then, had held very little power.`]
+]};
