@@ -4,18 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#5a4034">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>English through Stories</title>
-<style>html,body{margin:0;background:#f3eadf;color:#5a4034;font-family:serif}.loading{min-height:100vh;display:grid;place-items:center;font-size:14px;letter-spacing:.08em;color:#8a7466}</style>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="literature-ui.css?v=20260829-8">
+<link rel="stylesheet" href="literature-copy.css?v=20260829-8">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;-webkit-font-smoothing:antialiased}button,select{font:inherit}header{width:100%}.head{width:100%}.controls-in{width:100%}main{width:100%}.section-title span{white-space:nowrap}.reader{position:relative}.row+.row{border-top:1px solid #d9c5b3}.cell{position:relative;overflow-wrap:anywhere;touch-action:manipulation}.cell::after{content:"";position:absolute;left:0;right:0;bottom:0}.row-heading{min-height:46px!important;grid-template-columns:44% 56%!important}.row-heading .cell{cursor:default!important;padding-top:10px!important;padding-bottom:10px!important;background:#eee1d4!important;color:#8b7567!important;font-size:13px!important;font-weight:700!important}.row-heading .cell::after{display:none}.reader-loading,.reader-error{margin-top:12px;padding:34px 18px;text-align:center;border:1px solid #d9c5b3;border-radius:16px;background:#fffaf4;color:#8a7466;font-weight:700}.toast{position:fixed!important;display:block!important;z-index:80;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translate(-50%,12px);opacity:0;pointer-events:none;background:rgba(90,64,52,.94);color:#fff8ef;border-radius:999px;padding:9px 14px;font:700 11px/1.2 system-ui,sans-serif;transition:.16s ease}.toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
 </head>
-<body><div class="loading">Loading…</div>
-<script>
-(async()=>{
-  const res=await fetch('literature-beta.html?v=20260829-7');
-  let html=await res.text();
-  html=html.replace('<meta name="theme-color" content="#17233d">','<meta name="theme-color" content="#5a4034">')
-           .replace('<title>Literature Audio Reader — Beta</title>','<title>English through Stories</title>')
-           .replace('</head>','<link rel="stylesheet" href="literature-ui.css?v=20260829-7"><link rel="stylesheet" href="literature-copy.css?v=20260829-6"></head>')
-           .replace('</body>','<script src="literature-ui.js?v=20260829-7"><\/script><script src="literature-copy.js?v=20260829-6"><\/script></body>');
-  document.open();document.write(html);document.close();
-})().catch(()=>{document.body.innerHTML='<div class="loading">読み込みに失敗しました</div>'});
-</script></body></html>
+<body>
+<header><div class="head"><h1>English through Stories</h1></div></header>
+<div class="controls"><div class="controls-in">
+  <select id="workSelect" aria-label="作品"></select>
+  <select id="sectionSelect" aria-label="章"></select>
+  <div class="rate" aria-label="再生速度">
+    <button type="button" data-rate="0.86">0.86</button>
+    <button type="button" data-rate="1">1.0</button>
+    <button type="button" data-rate="1.12">1.12</button>
+  </div>
+</div></div>
+<main><div id="content"><div class="reader-loading">Loading…</div></div></main>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script defer src="data/story-catalog.js?v=20260829-1"></script>
+<script defer src="literature-app.js?v=20260829-1"></script>
+<script defer src="literature-copy.js?v=20260829-8"></script>
+</body>
+</html>
