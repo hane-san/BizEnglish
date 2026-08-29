@@ -10,12 +10,12 @@
 <body><div class="loading">Loading…</div>
 <script>
 (async()=>{
-  const res=await fetch('literature-beta.html?v=20260829-5');
+  const res=await fetch('literature-beta.html?v=20260829-6');
   let html=await res.text();
   html=html.replace('<meta name="theme-color" content="#17233d">','<meta name="theme-color" content="#5a4034">')
            .replace('<title>Literature Audio Reader — Beta</title>','<title>English through Stories</title>')
-           .replace('</head>','<link rel="stylesheet" href="literature-ui.css?v=20260829-5"></head>')
-           .replace('</body>','<script src="literature-ui.js?v=20260829-5"><\/script></body>');
+           .replace('</head>','<link rel="stylesheet" href="literature-ui.css?v=20260829-6"><link rel="stylesheet" href="literature-copy.css?v=20260829-6"></head>')
+           .replace('</body>','<script src="literature-ui.js?v=20260829-6"><\/script><script src="literature-copy.js?v=20260829-6"><\/script></body>');
   document.open();document.write(html);document.close();
 })().catch(()=>{document.body.innerHTML='<div class="loading">読み込みに失敗しました</div>'});
 </script></body></html>
