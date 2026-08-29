@@ -24,7 +24,7 @@
 
   function safeGet(key, fallback = '') { try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; } }
   function safeSet(key, value) { try { localStorage.setItem(key, String(value)); } catch (_) {} }
-  function escapeHtml(text) { return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c])); }
+  function escapeHtml(text) { return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function stripBold(text) { return String(text ?? '').replace(/\*\*/g, ''); }
   function parseEnglish(raw) {
     raw = String(raw ?? '');
