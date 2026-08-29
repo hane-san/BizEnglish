@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260829-2';
+  const VERSION = '20260829-3';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
   const state = { work: null, section: null, rate: 1, oneHand: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
@@ -24,7 +24,7 @@
 
   function safeGet(key, fallback = '') { try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; } }
   function safeSet(key, value) { try { localStorage.setItem(key, String(value)); } catch (_) {} }
-  function escapeHtml(text) { return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function escapeHtml(text) { return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c])); }
   function stripBold(text) { return String(text ?? '').replace(/\*\*/g, ''); }
   function parseEnglish(raw) {
     raw = String(raw ?? '');
