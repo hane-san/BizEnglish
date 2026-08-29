@@ -1,0 +1,28 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:007']={id:'007',rows:[
+[String.raw`だが、あとの半分はどこから手に入れたものか？`,String.raw`But where was the remaining half going to come from?`],
+[String.raw`どうしてあとの四十ルーブルを調達したものか？`,String.raw`How could he raise the other forty roubles?`],
+[String.raw`アカーキイ・アカーキエウィッチは考えにも考えた末、少くとも、向こう一年間は日常の経費を節約するほかはないと決心した。`,String.raw`After thinking it through carefully, Akaky Akakievich decided that for at least the next year he would have to **cut back on everyday expenses**.`],
+[String.raw`毎晩お茶を飲むことをやめ、夜分もローソクを点さないことにした。`,String.raw`He stopped drinking tea in the evening and decided not to light candles at night.`],
+[String.raw`もし何かしなければならないことでもあれば、主婦の部屋へ行って、そこのローソクの灯りで仕事をすることにした。`,String.raw`If he needed to work in the evening, he would use the light in his landlady's room instead.`],
+[String.raw`街を歩くにも、丸石や鋪石の上はなるだけそっと、用心深く爪立って歩くようにして、靴底が早く磨りへらないように心がけた。`,String.raw`He even walked as carefully as possible to **reduce wear and tear** on the soles of his shoes.`],
+[String.raw`また、なるべく下着も洗濯婦へ出さないようにして、それらを着よごさないために、役所から帰ったら、さっそく脱いだ。`,String.raw`He sent his clothes to the laundry less often and changed as soon as he came home so they would last longer.`],
+[String.raw`正直なところ、こうした切りつめた生活に慣れるということは、彼にとってもさすがに最初のうちはいささか困難であった。`,String.raw`At first, adapting to such a restricted budget was difficult even for him.`],
+[String.raw`やがてそれにもどうやら馴れて、おいおいうまく行くようになり、毎晩の空腹にすら、彼はすっかり慣れっこになった。`,String.raw`Gradually, however, he adjusted and the arrangement began to work.`],
+[String.raw`けれど、そのかわりにやがて新しい外套ができるという常住不断の想いをその心に懐いて、いわば精神的に身を養っていたのである。`,String.raw`In return, the thought of the new overcoat gave him a clear sense of purpose.`],
+[String.raw`この時以来、彼の生活そのものが、何かしら充実してきた観があった。`,String.raw`From that point on, his life seemed to gain a new sense of direction.`],
+[String.raw`彼はどことなく前より生々してきて、性格までがあたかも心に一定の目的を懐ける人のように強固になった。`,String.raw`He became more energetic and more decisive, like someone **working towards a clear objective**.`],
+[String.raw`その顔つきからも振舞いからも、いつとはなしに、疑惑の影や優柔不断の色――一言にしていえば、一切のぐらぐらした不安定な面影が消えうせたのである。`,String.raw`The hesitation and uncertainty gradually disappeared from his manner.`],
+[String.raw`毎月たった一度ずつではあったが、彼は外套のことを――ラシャはどこで買ったらいいか、色合はどんなのがよくて、値ごろはどの辺にしたものだろう、などと、ペトローヴィッチのところへ相談に出かけた。`,String.raw`Once a month, he met Petrovich to **review the options**: where to buy the cloth, what colour to choose and what price range would be reasonable.`],
+[String.raw`ところが、事は彼が予期したよりはるかに手っとり早くはかどった。`,String.raw`In fact, things progressed much faster than he had expected.`],
+[String.raw`まったく思いがけなくも、局長はアカーキイ・アカーキエウィッチに対する賞与を四十ルーブルや四十五ルーブルどころか、じつに大枚六十ルーブルと指定してくれたのである。`,String.raw`Unexpectedly, the director awarded him a bonus of sixty roubles rather than forty or forty-five.`],
+[String.raw`これで彼の懐ろには二十ルーブルという余分の金が生じたわけである。`,String.raw`This gave him an additional twenty roubles to work with.`],
+[String.raw`こうした事情によって、問題は意外にその速度を早めた。`,String.raw`That change **accelerated the whole process**.`],
+[String.raw`で、さらに二、三ヵ月のあいだ多少の空腹を辛抱すると、アカーキイ・アカーキエウィッチの手許には正しく八十ルーブル前後の金がまとまったのである。`,String.raw`After another two or three months of saving, he had finally accumulated around eighty roubles.`],
+[String.raw`いよいよ金のできた最初の日に、彼はペトローヴィッチと連れだって店へ出かけた。`,String.raw`As soon as the money was ready, he went shopping with Petrovich.`],
+[String.raw`二人は非常に上等なラシャを買った。`,String.raw`They bought very good-quality cloth.`],
+[String.raw`それもそのはずで、彼らはもう半年も前からそれについては考えに考えて、店へ値段をひやかしに行かなかった月はほとんどなかったくらいだからである。`,String.raw`That was hardly surprising: they had been researching the purchase for six months and **checking prices regularly**.`],
+[String.raw`そのかわり、当のペトローヴィッチでさえ、これ以上のラシャ地はあるまいと言った。`,String.raw`Even Petrovich said they were unlikely to find better cloth.`],
+[String.raw`裏地にはキャラコを選んだが、これまた地質のよい丈夫なものであった。`,String.raw`They chose a strong, good-quality calico for the lining.`],
+[String.raw`貂皮はなるほど高価だったので買わなかったけれど、そのかわりに、店じゅうで一番上等の猫の毛皮を買った。`,String.raw`Marten was **outside the budget**, so they selected the best cat fur available instead.`]
+]};
