@@ -24,7 +24,7 @@
 
   function safeGet(key, fallback = '') { try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; } }
   function safeSet(key, value) { try { localStorage.setItem(key, String(value)); } catch (_) {} }
-  function escapeHtml(text) { return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c])); }
+  function escapeHtml(text) { return String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
   function stripBold(text) { return String(text ?? '').replace(/\*\*/g, ''); }
   function parseEnglish(raw) {
     raw = String(raw ?? '');
@@ -395,7 +395,7 @@
     installOneHandToggle();
     const storedRate=Number(safeGet(storage.rate,'1'));
     setRate([.86,1,1.12].includes(storedRate)?storedRate:1,false);
-    state.oneHand=safeGet(storage.onehand,'0')==='1';
+    state.oneHand=safeGet(storage.oneHand,'0')==='1';
     const last=safeGet(storage.lastWork,'');
     await selectWork(catalog.some(w=>w.id===last)?last:catalog[0].id,true);
     setOneHand(state.oneHand,false);
