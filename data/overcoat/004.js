@@ -1,0 +1,26 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:004']={id:'004',rows:[
+[String.raw`どうやら彼にはこの写しもの以外には何ひとつ仕事がなかったもののようである。`,String.raw`It was almost as if copying documents were the only work that existed for him.`],
+[String.raw`彼は自分の服装のことなどはまるで心にもとめなかった。`,String.raw`He **paid almost no attention to** his appearance.`],
+[String.raw`彼の着ている制服といえば、緑色があせて変なにんじんに黴が生えたような色をしていた。`,String.raw`His uniform had faded from green to a strange, dull colour.`],
+[String.raw`それに襟が狭くて低かったため、彼の首はそれほど長いほうではなかったけれど、襟からにゅうと抜け出して、おそろしく長く見えた。`,String.raw`Its narrow, low collar made his neck look much longer than it really was.`],
+[String.raw`それにまた、彼の制服には、いつもきまって、何か乾草の切れっぱしとか糸くずといったものがこびりついていた。`,String.raw`Bits of straw, thread and other debris were nearly always stuck to it.`],
+[String.raw`彼は生まれてこの方ただの一度も、日々、街中でくり返されているできごとなどには注意を向けたこともなかった。`,String.raw`He had never paid any real attention to the everyday events taking place around him in the street.`],
+[String.raw`しかし、アカーキイ・アカーキエウィッチは何を見たとしても、彼の眼には、そうしたものの上に、なだらかな筆蹟で書きあげられた自筆の文字より他には映らなかったのである。`,String.raw`Whatever he looked at, he seemed to see nothing but the neat lines of handwriting he spent his days producing.`],
+[String.raw`彼は家へ帰ると早速、食卓につき、大急ぎでおきまりのシチューをすすり、たまねぎを添えた一切れの牛肉をたいらげるが、味加減などには一切無頓着であった。`,String.raw`As soon as he got home, he sat down, quickly ate his usual stew and a piece of beef with onion, and **gave no thought to** how it tasted.`],
+[String.raw`胃袋がくちくなりはじめたなと気がつくと、彼は食卓を離れて、墨汁の入った壺を取り出して、家へ持ち帰った書類を書き写しにかかるのである。`,String.raw`Once he felt full, he left the table, took out his ink and **got on with** copying the documents he had brought home.`],
+[String.raw`もし、そういったものの無い場合には、自分の楽しみだけに、わざわざ自分のために写本をつくる。`,String.raw`If there was nothing official to copy, he copied something purely for his own pleasure.`],
+[String.raw`ペテルブルグの灰いろの空がまったく色褪せて、すべての役人連中が貰っている給料なり、めいめいの嗜好なりに従って、分相応の食事をたらふくつめこんだり、また誰も彼もが役所でのペンの軋みや、あくせくたる奔命や、自分のばかりか他人ののっぴきならぬ執務や、またおせっかいなてあいが自分から進んで引き受けるいろんな仕事の後で、ほっと一息いれている時――アカーキイ・アカーキエウィッチはなんら娯楽などにうきみをやつそうとはしなかった。`,String.raw`When the other officials finished work and relaxed after a day of paperwork, constant rushing about and urgent business of their own and others, Akaky Akakievich had no interest in entertainment.`],
+[String.raw`ついぞどこかの夜会で彼の姿を見かけたなどということのできる者は、誰一人なかった。`,String.raw`No one could remember ever seeing him at an evening gathering.`],
+[String.raw`心ゆくまで書きものをすると、彼は神様があすはどんな写しものを下さるだろうかと、翌日の日のことを今から楽しみに、にこにこほほえみながら寝につくのであった。`,String.raw`Once he had copied to his heart's content, he went to bed smiling and **looking forward to** whatever work the next day might bring.`],
+[String.raw`このようにして、年に四百ルーブルの俸給にあまんじながら自分の運命に安んずることのできる人間の平和な生活は流れて行った。`,String.raw`So his quiet life continued, content with an annual salary of four hundred roubles.`],
+[String.raw`ペテルブルグには、年に四百ルーブル、またはほぼそれに近い俸給をとっているあらゆる勤め人にとってのゆゆしき強敵がある。`,String.raw`In St Petersburg, however, everyone earning around four hundred roubles a year faced one serious problem.`],
+[String.raw`その強敵というのはほかでもない、健康のためには良いと言われているが、あの厳しい北国の寒さである。`,String.raw`That problem was the severe northern cold, however healthy people claimed it might be.`],
+[String.raw`唯一の救いは、薄っぺらな外套に身をくるみ、できるだけ早く五つ六つの通りを駆けぬけて、それから守衛室でしこたま足踏みをしながら、途中で凍りついてしまった執務に要するあらゆる技倆や才能が融けだすのを待つことであった。`,String.raw`The only solution was to wrap oneself in a thin overcoat, hurry through five or six streets, then warm up in the guardroom until one was capable of working again.`],
+[String.raw`アカーキイ・アカーキエウィッチはできるだけ早く、いつもきまった道程を駆け抜けるように努めていたにもかかわらず、いつからともなく背中と肩の辺が何だか特にひどくちかちかするように感じ出した。`,String.raw`Although Akaky Akakievich always tried to cover his usual route as quickly as possible, he gradually began to notice an especially sharp cold across his back and shoulders.`],
+[String.raw`ついに彼は、これは何か自分の外套のせいではなかろうかと考えた。`,String.raw`Eventually, he **began to suspect that** his overcoat was the problem.`],
+[String.raw`家でたんねんに調べてみると、なるほど二、三ヵ所、つまり背中と両肩のところがまるで木綿ぎれのように薄くなっているのを発見した。`,String.raw`When he examined it carefully at home, he found that several areas across the back and shoulders had become extremely thin.`],
+[String.raw`ラシャは透けて見えるほどすり切れ、裏地がぼろぼろになっている。`,String.raw`The cloth was worn almost transparent and the lining was falling apart.`],
+[String.raw`さて、事のしだいを確かめると、アカーキイ・アカーキエウィッチは、外套をペトローヴィッチのところへもってゆかねばならぬと考えた。`,String.raw`Having **established the cause of the problem**, Akaky Akakievich decided that he would have to take the coat to Petrovich.`],
+[String.raw`それはどこかの四階の裏ばしごを上がったところに住んでいる仕立屋で、めっかちな上に顔中あばただらけの男であったけれど、小役人やその他いろんな顧客のズボンや燕尾服の繕い仕事をかなり巧くやっていた。`,String.raw`Petrovich was a one-eyed, pockmarked tailor living at the top of a back staircase, and he was quite good at repairing trousers and coats for minor officials and other customers.`]
+]};
