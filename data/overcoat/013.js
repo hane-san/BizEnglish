@@ -1,0 +1,28 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:013']={id:'013',rows:[
+[String.raw`彼はアカーキイ・アカーキエウィッチのつつましやかな様子と、古ぼけた制服に眼をとめると、いきなり彼の方へ向き直って、「何の用だね？」と、ぶっきら棒な強い語調で言った。`,String.raw`Seeing Akaky Akakievich's modest manner and worn uniform, the official turned towards him and asked sharply, “What do you want?”`],
+[String.raw`その語調は、彼が勅任官に任命されて現在の地位を得る一週間も前から、一人きり自室に閉じこもって、鏡の前であらかじめ練習しておいたものであった。`,String.raw`It was a tone he had practised in front of a mirror before even taking up his current post.`],
+[String.raw`アカーキイ・アカーキエウィッチは、もういい加減に怖気づいてどぎまぎしていたが、廻らぬ舌を精いっぱい働かせて、外套はぜんぜん新しい物であったのに、それが今はじつに非道なやり方で強奪されてしまったことを説明した。`,String.raw`Already nervous, Akaky Akakievich did his best to explain that his brand-new coat had been violently stolen.`],
+[String.raw`それで今日お邪魔したのは、御斡旋をねがって、何とかして、警視総監なり誰なり、しかるべき筋と打合わせて、外套を探し出していただきたいがためであると説明した。`,String.raw`He said he had come to ask for help in **coordinating with the appropriate authorities** so that the coat might be recovered.`],
+[String.raw`どうしたものか、勅任官には、そうした態度があまりに馴々しすぎるように思われた。`,String.raw`For some reason, the official considered this manner far too familiar.`],
+[String.raw`「何だね、君は、ものの順序というものを御存じないのかね？」`,String.raw`“Do you not understand the proper order of things?”`],
+[String.raw`「君はいったいどこへやって来たんだ？　手続きというものを知らないのかね？」`,String.raw`“Do you know where you are? Are you unfamiliar with the procedure?”`],
+[String.raw`「こういう場合にはまず第一、事務課へ願書を提出すべきじゃ。」`,String.raw`“In a case like this, you must first **submit a formal request to the administrative office**.”`],
+[String.raw`「するとそれが主事の手許へ行き、課長のところへ移されて、それから秘書官に廻されるちうと、初めてそれが秘書官の手を経て本官の許へ提出されるのが順序なのじゃ……」`,String.raw`“It then goes to the clerk in charge, then to the section head, then to the secretary, and only after that should it be brought to me. That is the proper process.”`],
+[String.raw`「ですけれど閣下、」とアカーキイ・アカーキエウィッチは、なけなしの勇気をふりしぼると同時に、おそろしく汗だくになったと自ら感じながら口を切った。`,String.raw`“But, Your Excellency,” Akaky Akakievich began, using what little courage he had left and feeling himself break into a sweat.`],
+[String.raw`「閣下、わたくしが、たって御迷惑なお願いをいたしまするのは、じつは、秘書官などと申しまするものは、その……まったく当てにならない連中でございますからで……」`,String.raw`“The reason I came directly to you is that the secretaries are... well... **not entirely reliable**.”`],
+[String.raw`「なに、なに、なんだと？」と、有力者はせきこんだ。`,String.raw`“What? What did you say?” the official demanded.`],
+[String.raw`「君はいったいどこからそんな精神を仕入れてきたのだ？　どこからそのような思想を持ってきたのだ？」`,String.raw`“Where did you get such ideas?”`],
+[String.raw`「長官や上長に対して、若い者の間には、何たる不埒な考えが拡がっとることか！」`,String.raw`“What extraordinary disrespect for senior officials and superiors is spreading among the younger generation!”`],
+[String.raw`有力者はどうやら、アカーキイ・アカーキエウィッチがすでに五十の坂を越しており、したがって、彼を若いということができるとすれば、それは七十にもなる老人と対照した場合に限るということに気がつかなかったらしい。`,String.raw`The official seemed not to notice that Akaky Akakievich was already over fifty and could only be called young in comparison with a man of seventy.`],
+[String.raw`「君はそんなことをいったい誰に向かって言っているつもりなんだ？」`,String.raw`“Who do you think you are speaking to?”`],
+[String.raw`「君の前にいるのがそもそも誰だかわかってるのか？　わかってるのか？　わかってるのか？」`,String.raw`“Do you understand who is standing in front of you? Do you understand?”`],
+[String.raw`ここで彼は、アカーキイ・アカーキエウィッチならずとも、ぎょっとしたに違いないような威丈高な声を張りあげながら、どしんと一つ足を踏み鳴らした。`,String.raw`He raised his voice and stamped his foot in a way that would have intimidated almost anyone.`],
+[String.raw`アカーキイ・アカーキエウィッチはそのまま気が遠くなり、よろよろとして、全身をわなわなふるわせ始めると、もうどうしても立っていることができなくなってしまった。`,String.raw`Akaky Akakievich grew faint, began shaking and could no longer remain standing.`],
+[String.raw`彼はまるで死んだようになって運び出された。`,String.raw`He was carried out looking almost lifeless.`],
+[String.raw`ところが、予期以上の効果に気をよくした有力者は、自分の一言でひとりの人間の感覚をさえ麻痺させることができるという考えにすっかり有頂天になった。`,String.raw`The official, pleased that his words had had an even stronger effect than expected, felt rather proud of his authority.`],
+[String.raw`どうして階段を降りたものやら、どうして街へ出たのやら、アカーキイ・アカーキエウィッチにはそんなことは少しも憶えがなかった。`,String.raw`Akaky Akakievich could not remember how he got down the stairs or out into the street.`],
+[String.raw`生涯に一度としてこんなにひどく長官から、それも他省の長官から叱責されたことはなかった。`,String.raw`Never in his life had he been spoken to so harshly by a senior official.`],
+[String.raw`彼は街上に吹きすさぶ吹雪の中を、口をぽかんと開けたまま、歩道を踏みはずし踏みはずし歩いていった。`,String.raw`He wandered through the snowstorm in a state of shock.`],
+[String.raw`たちまち彼は扁桃腺を冒されて、家へたどりつくなり、一言も口をきくどころか、全身にすっかりむくみがきて、そのままどっと寝込んでしまった。`,String.raw`By the time he reached home, he was seriously ill and immediately took to his bed.`]
+]};
