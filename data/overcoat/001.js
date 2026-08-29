@@ -1,0 +1,25 @@
+window.STORY_SECTIONS=window.STORY_SECTIONS||{};
+window.STORY_SECTIONS['overcoat:001']={id:'001',rows:[
+[String.raw`ある省のある局に……しかし何局とはっきり言わないほうがいいだろう。`,String.raw`In a certain department of a certain ministry — though it is probably better **not to say exactly which one**.`],
+[String.raw`おしなべて官房とか連隊とか事務局とか、一口にいえば、あらゆる役人階級ほど怒りっぽいものはないからである。`,String.raw`Government offices, regiments and administrative bodies of every kind tend to be remarkably sensitive about such matters.`],
+[String.raw`今日では総じて自分一個が侮辱されても、なんぞやその社会全体が侮辱されでもしたように思いこむ癖がある。`,String.raw`These days, people often **take a personal slight as an attack on the whole organisation** they represent.`],
+[String.raw`つい最近にも、どこの市だったかしかとは覚えていないが、さる警察署長から上申書が提出されて、その中には、国家の威令が危殆に瀕していること、警察署長という神聖な肩書がむやみに濫用されていること等が明記されていたそうである。`,String.raw`Quite recently, a police chief from some town — I cannot remember which — **submitted a formal complaint** stating that public authority was being undermined and that the title of police chief was being used far too casually.`],
+[String.raw`しかも、その証拠だといって、件の上申書には一篇の小説めいたはなはだしく厖大な述作が添えてあり、その十頁ごとに警察署長が登場するばかりか、ところによっては、へべれけに泥酔した姿を現わしているとのことである。`,String.raw`As evidence, he had apparently attached an extremely long, novel-like document in which a police chief appeared every ten pages and was sometimes shown completely drunk.`],
+[String.raw`そんな次第で、いろんな面白からぬことを避けるためには、便宜上この問題の局を、ただ「ある局」というだけにとどめておくに如くはないだろう。`,String.raw`So, **to avoid unnecessary trouble**, we shall simply refer to the office in question as “a certain department”.`],
+[String.raw`さて、そのある局に、「一人の官吏」が勤めていた――官吏、といったところで、大して立派な役柄の者ではなかった。`,String.raw`In this department there worked a civil servant — though he **held no particularly senior position**.`],
+[String.raw`背丈がちんちくりんで、顔には薄あばたがあり、髪の毛は赤ちゃけ、それに目がしょぼしょぼしていて、額がすこし禿げあがり、頬の両側には小皺が寄って、どうもその顔いろはいわゆる痔もちならしい……しかし、これはどうも仕方がない！`,String.raw`He was short, slightly pockmarked, reddish-haired and rather weak-eyed, with a receding hairline, small wrinkles on both cheeks and a complexion that suggested poor health — but there was nothing to be done about that.`],
+[String.raw`罪はペテルブルグの気候にあるのだから。`,String.raw`The St Petersburg climate was to blame.`],
+[String.raw`官等にいたっては（それというのも、わが国では何はさて、官等を第一に御披露しなければならないからであるが）、いわゆる万年九等官というやつで、これは知っての通り噛みつくこともできない相手をやりこめるというまことにけっこうな習慣を持つ凡百の文士連から存分に愚弄されたり、ひやかされたりしてきた官等である。`,String.raw`As for rank — which in our country must always be mentioned first — he was one of those permanent ninth-grade officials who had long been an easy target for writers fond of mocking people unable to answer back.`],
+[String.raw`この官吏の姓はバシマチキンといった。`,String.raw`The official's surname was Bashmachkin.`],
+[String.raw`この名前そのものから、それが短靴（バシマク）に由来するものであることは明らかであるが、しかしいつ、いかなる時代に、どんなふうにして、その姓が短靴という言葉から出たものか――それは皆目わからない。`,String.raw`The name clearly **seems to derive from** the Russian word for a shoe, although no one knows when or how the family name developed from it.`],
+[String.raw`父も祖父も、あまつさえ義兄弟まで、つまりバシマチキン一族のものといえば皆が皆ひとりのこらず長靴を用いており、底革は年にほんの三度ぐらいしか張り替えなかった。`,String.raw`His father, grandfather and even his relatives all wore boots, and had the soles replaced only about three times a year.`],
+[String.raw`彼の名はアカーキイ・アカーキエウィッチといった。`,String.raw`His name was Akaky Akakievich.`],
+[String.raw`あるいは、読者はこの名前をいささか奇妙なわざとらしいものに思われるかもしれないが、しかしこの名前はけっしてことさら選り好んだものではなく、どうしてもこうよりほかに名前のつけようがなかった事情が、自然とそこに生じたからだと断言することができる。`,String.raw`The name may sound rather artificial, but I can assure you that it was not deliberately chosen; circumstances simply **left them with no real alternative**.`],
+[String.raw`つまり、それはこういうわけである。`,String.raw`This is how it happened.`],
+[String.raw`アカーキイ・アカーキエウィッチは私の記憶にして間違いさえなければ、三月二十三日の深更に生まれた。`,String.raw`If I remember correctly, Akaky Akakievich was born late at night on 23 March.`],
+[String.raw`今は亡き、そのお袋というのは官吏の細君で、ひどく気だての優しい女であったが、然るべく赤ん坊に洗礼を施こそうと考えた。`,String.raw`His late mother, the wife of a civil servant and a very kind woman, wanted the baby to be baptised properly.`],
+[String.raw`お袋はまだ戸口に向かいあった寝台に臥っており、その右手にはイワン・イワーノヴィッチ・エローシキンといって、当時元老院の古参事務官であった、この上もなく立派な人物が教父として控えており、また教母としては区の警察署長の細君で、アリーナ・セミョーノヴナ・ビェロヴリューシコワという、世にもめずらしい善良温雅な婦人が佇んでいた。`,String.raw`She was still lying in bed, with Ivan Ivanovich Yeroshkin, a respected senior clerk in the Senate, acting as godfather, and Arina Semyonovna Belobryushkova, the district police chief's good-natured wife, as godmother.`],
+[String.raw`そこで産婦に向かって、モーキイとするか、ソッシイとするか、それとも殉教者ホザザートの名に因んで命名するか、とにかくこの三つのうちどれか好きな名前を選ぶようにと申し出た。`,String.raw`She was asked to **choose from three options**: Mokiy, Sossiy or the name of the martyr Khozdazat.`],
+[String.raw`「まあいやだ。」と、今は亡きその女は考えた。`,String.raw`“Oh, no,” the poor woman thought.`],
+[String.raw`「変な名前ばっかりだわ。」`,String.raw`“They are all such strange names.”`]
+]};
