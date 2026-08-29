@@ -1,7 +1,7 @@
 window.STORY_SECTIONS=window.STORY_SECTIONS||{};
 window.STORY_SECTIONS['overcoat:006']={id:'006',rows:[
 [String.raw`「御意のとおりで。」と、ペトローヴィッチが言った。`,String.raw`“That's right,” Petrovich said.`],
-[String.raw`「それも外套によりけりでしてな。もし襟に貂の毛皮でもつけ、頭巾を絹裏にでもして御覧じろ、すぐにもう、二百ルーブルにはなってしまいますからなあ。」`,String.raw`“And that depends on the specifications. Add a marten collar and silk lining, and the cost would quickly rise to two hundred roubles.”`],
+[String.raw`「それも外套によりけりでしてな。もし襟に貂の毛皮でもつけ、頭巾を絹裏にでもして御覧じろ、すぐにもう、二百ルーブルにはなってしまいますからなあ。」`,String.raw`“And **that all depends on what you want**. Add a marten collar and silk lining, and the cost would quickly rise to two hundred roubles.”`],
 [String.raw`「ペトローヴィッチ、後生だから、何とかして、もうほんの少しの間でも保たせるように、繕って見ておくれよ。」`,String.raw`“Petrovich, please. Just repair it somehow so that it lasts a little longer.”`],
 [String.raw`「いや、駄目なことですよ。どうせ骨折り損の銭うしないってことにしきゃなりませんから。」`,String.raw`“It would be pointless. You would only **spend money without solving the problem**.”`],
 [String.raw`こんな言葉を聞かされて、アカーキイ・アカーキエウィッチはすっかり意気悄沈して表へ出た。`,String.raw`Akaky Akakievich left completely discouraged.`],
