@@ -19,7 +19,7 @@ window.STORY_SECTIONS['overcoat:002']={id:'002',rows:[
 [String.raw`局長や、もろもろの課長連が幾人となく更迭しても、彼は相も変らず同じ席で、同じ地位で、同じ役柄の、十年一日の如き文書係を勤めていたので、しまいにはみんなが、てっきりこの男はちゃんと制服を身につけ、禿げ頭を振りかざして、すっかり用意をしてこの世へ生まれてきたものにちがいないと思いこんでしまったほどである。`,String.raw`Directors and section heads came and went, but he remained at the same desk, in the same rank, doing the same clerical work year after year, until people almost came to believe that he had been born into the world already wearing his uniform and ready for duty.`],
 [String.raw`役所では、彼に対しては少しの尊敬も払われなかった。`,String.raw`At the office, he **was treated with no respect at all**.`],
 [String.raw`彼がそばを通っても守衛たちは起立するどころか、玄関をたかだか蠅でも飛び過ぎたくらいにしか思わず、彼の方をふり向いてみようともしなかった。`,String.raw`The guards did not even look up when he passed, let alone stand; they reacted as if a fly had gone by.`],
-[String.raw`課長連は彼に対して妙に冷やかな圧制的な態度をとった。`,String.raw`The section heads **treated him in a cold and overbearing way**.`],
+[String.raw`課長連は彼に対して妙に冷やかな圧制的な態度をとった。`,String.raw`The section heads were cold and overbearing towards him.`],
 [String.raw`ある課長補佐の如きは、「清書してくれたまえ。」とか、「こいつはなかなか面白い、ちょっといい書類だよ。」とか、またはおよそ礼儀正しい勤め人の間で普通にとりかわされている何かちょっとしたお愛想ひとつ言うでもなく、いきなり彼の鼻先へ書類をつきつけるのであった。`,String.raw`One assistant head would simply push a document in front of him without even saying, “Please make a clean copy,” or offering any of the basic courtesies normally exchanged between colleagues.`],
 [String.raw`すると、彼はちらと書類のほうを見るだけで、いったい誰がそれを差し出したのやら、相手にはたしてそうする権利があるのやら、そんなことにはいっこう頓着なく、それを受け取る。`,String.raw`He would glance at the paper, accept it and **pay no attention to** who had handed it to him or whether that person had any authority to do so.`],
 [String.raw`受け取ると、早速その書類の写しにとりかかったものである。`,String.raw`He would then **get straight on with** copying the document.`],
