@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260919-9';
+  const VERSION = '20260919-10';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
   const state = { work: null, section: null, rate: 1, oneHand: false, review: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
@@ -281,6 +281,10 @@
     }).length;
     const html = section.rows.map(([ja,en], i) => {
       const heading = isHeadingRow(ja,en);
+      const title = heading ? (window.STORY_TITLES?.[state.work?.id]?.[String(Number(en))] || null) : null;
+      if (heading && title) {
+        return `<div class="row row-heading story-heading" data-row-index="${i}" data-story-no="${escapeHtml(en)}"><div class="cell ja"><span class="story-kicker">第${escapeHtml(en)}話</span><span class="story-title-ja">${escapeHtml(title.ja)}</span></div><div class="cell en"><span class="story-kicker">STORY ${escapeHtml(en)}</span><span class="story-title-en">${escapeHtml(title.en)}</span></div></div>`;
+      }
       const parsed = parseEnglish(en);
       const reviewItem = !heading && parsed.chunks.length > 0;
       const visible = !heading && (!state.review || reviewItem);
@@ -289,7 +293,8 @@
       return `<div class="${classes}" data-row-index="${i}"><div class="cell ja">${progress}<span class="ja-text">${escapeHtml(ja)}</span></div><div class="cell en" data-chunks="${escapeHtml(JSON.stringify(parsed.chunks))}"><span class="en-text">${parsed.html}</span></div></div>`;
     }).join('');
     const sectionLabel = state.review ? `${section.id} · 復習 ${totalAudio}` : section.id;
-    els.content.innerHTML = `<div class="section-title"><h2>${escapeHtml(state.work.icon)} ${escapeHtml(state.work.title)} <span>｜ ${escapeHtml(state.work.enTitle)}</span></h2><span>${escapeHtml(sectionLabel)}</span></div><div class="reader">${html}</div>`;
+    const editorialNote = state.work?.id === 'tono' && window.STORY_TITLES?.tono ? ' · 見出しは教材用' : '';
+    els.content.innerHTML = `<div class="section-title"><h2>${escapeHtml(state.work.icon)} ${escapeHtml(state.work.title)} <span>｜ ${escapeHtml(state.work.enTitle)}</span></h2><span>${escapeHtml(sectionLabel + editorialNote)}</span></div><div class="reader">${html}</div>`;
   }
 
   function restorePosition() {
@@ -310,6 +315,7 @@
     const sectionId = els.section.value || state.work.sectionIds[0];
     els.content.innerHTML = '<div class="reader-loading">Loading chapter…</div>';
     try {
+      if (state.work.titlesSrc) await loadScript(state.work.titlesSrc);
       const section = await getSection(state.work, sectionId);
       state.section = {id:section.id, rows:section.rows || []};
       renderRows(state.section);
