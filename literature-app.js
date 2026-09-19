@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260919-11';
+  const VERSION = '20260920-1';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
   const state = { work: null, section: null, rate: 1, oneHand: false, review: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
@@ -294,7 +294,10 @@
     }).join('');
     const baseSectionLabel = state.work?.sectionLabels?.[section.id] || section.id;
     const sectionLabel = state.review ? `${baseSectionLabel} · 復習 ${totalAudio}` : baseSectionLabel;
-    const editorialNote = state.work?.id === 'tono' && window.STORY_TITLES?.tono ? ' · 見出しは教材用' : '';
+    const notes=[];
+    if (state.work?.id === 'tono' && window.STORY_TITLES?.tono) notes.push('見出しは教材用');
+    if (state.work?.sectionNote) notes.push(state.work.sectionNote);
+    const editorialNote = notes.length ? ` · ${notes.join(' · ')}` : '';
     els.content.innerHTML = `<div class="section-title"><h2>${escapeHtml(state.work.icon)} ${escapeHtml(state.work.title)} <span>｜ ${escapeHtml(state.work.enTitle)}</span></h2><span>${escapeHtml(sectionLabel + editorialNote)}</span></div><div class="reader">${html}</div>`;
   }
 
