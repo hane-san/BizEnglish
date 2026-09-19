@@ -24,7 +24,7 @@ window.STORY_SECTIONS['overcoat:015']={id:'015',rows:[
 [String.raw`彼はあわてて外套を脱ぎすてざま、まるで自分の声とは思われないような声を振りしぼって馭者にこう叫んだ。`,String.raw`He immediately threw off his coat and shouted to the driver in a voice he hardly recognised as his own.`],
 [String.raw`「全速力で家へやれ！」`,String.raw`“Take me home as fast as you can!”`],
 [String.raw`六分間あまりで、有力者は早くも自分の家の玄関さきへ着いていた。`,String.raw`Within about six minutes, he was back at his own front door.`],
-[String.raw`この出来事は彼に強い感銘を与えた。`,String.raw`The incident **had a lasting effect on him**.`],
+[String.raw`この出来事は彼に強い感銘を与えた。`,String.raw`The incident **made a profound impression on him**.`],
 [String.raw`彼は下僚に対しても、例の「言語道断ではないか！　君の前にいるのが誰だか分っとるのか？」というきまり文句を、以前ほどは浴びせなくなった。`,String.raw`He used his usual intimidating phrases with junior staff far less often.`],
 [String.raw`もし浴びせたにしても、それはまず、事の顛末をいちおう聴取してからであった。`,String.raw`And if he did reprimand someone, he would first **hear the full circumstances**.`],
 [String.raw`ところが、それ以上に顕著な事実は、それ以来ふっつりと、かの役人の幽霊が姿を現わさなくなったことである。`,String.raw`More strikingly, the ghost of the official stopped appearing altogether.`],
