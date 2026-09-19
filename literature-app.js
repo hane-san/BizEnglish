@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260919-8';
+  const VERSION = '20260919-9';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
   const state = { work: null, section: null, rate: 1, oneHand: false, review: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
