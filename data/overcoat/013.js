@@ -20,7 +20,7 @@ window.STORY_SECTIONS['overcoat:013']={id:'013',rows:[
 [String.raw`ここで彼は、アカーキイ・アカーキエウィッチならずとも、ぎょっとしたに違いないような威丈高な声を張りあげながら、どしんと一つ足を踏み鳴らした。`,String.raw`He raised his voice and stamped his foot in a way that would have intimidated almost anyone.`],
 [String.raw`アカーキイ・アカーキエウィッチはそのまま気が遠くなり、よろよろとして、全身をわなわなふるわせ始めると、もうどうしても立っていることができなくなってしまった。`,String.raw`Akaky Akakievich grew faint, began shaking and could no longer remain standing.`],
 [String.raw`彼はまるで死んだようになって運び出された。`,String.raw`He was carried out looking almost lifeless.`],
-[String.raw`ところが、予期以上の効果に気をよくした有力者は、自分の一言でひとりの人間の感覚をさえ麻痺させることができるという考えにすっかり有頂天になった。`,String.raw`The official, pleased that his words had had an even stronger effect than expected, felt rather proud of his authority.`],
+[String.raw`ところが、予期以上の効果に気をよくした有力者は、自分の一言でひとりの人間の感覚をさえ麻痺させることができるという考えにすっかり有頂天になった。`,String.raw`Pleased that his words had had an even stronger effect than expected, the official was delighted by the thought that a single word from him could leave a man senseless.`],
 [String.raw`どうして階段を降りたものやら、どうして街へ出たのやら、アカーキイ・アカーキエウィッチにはそんなことは少しも憶えがなかった。`,String.raw`Akaky Akakievich could not remember how he got down the stairs or out into the street.`],
 [String.raw`生涯に一度としてこんなにひどく長官から、それも他省の長官から叱責されたことはなかった。`,String.raw`Never in his life had he been spoken to so harshly by a senior official.`],
 [String.raw`彼は街上に吹きすさぶ吹雪の中を、口をぽかんと開けたまま、歩道を踏みはずし踏みはずし歩いていった。`,String.raw`He wandered through the snowstorm in a state of shock.`],
