@@ -7,7 +7,7 @@ window.STORY_SECTIONS['rashomon:005']={id:'005',rows:[
 [String.raw`そうして、またさっきこの門の上へ上って、この老婆を捕えた時の勇気とは、全然、反対な方向に動こうとする勇気である。`,String.raw`And it was moving in exactly the opposite direction from the courage that had driven him to confront the old woman.`],
 [String.raw`下人は、飢死をするか盗人になるかに、迷わなかったばかりではない。`,String.raw`He was no longer hesitating between starvation and becoming a thief.`],
 [String.raw`その時のこの男の心もちから云えば、飢死などと云う事は、ほとんど、考える事さえ出来ないほど、意識の外に追い出されていた。`,String.raw`At that moment, starvation had been pushed so completely out of his mind that it was barely an option at all.`],
-[String.raw`「きっと、そうか。」`,String.raw`“Are you sure that's how you see it?”`],
+[String.raw`「きっと、そうか。」`,String.raw`“So you're quite sure of that?”`],
 [String.raw`老婆の話が完ると、下人は嘲るような声で念を押した。`,String.raw`When the old woman had finished, the servant **pressed her to confirm it**, his voice openly mocking.`],
 [String.raw`そうして、一足前へ出ると、不意に右の手を面皰から離して、老婆の襟上をつかみながら、噛みつくようにこう云った。`,String.raw`He stepped forward, took his hand away from his cheek, grabbed the old woman by the collar and spoke sharply.`],
 [String.raw`「では、己が引剥をしようと恨むまいな。`,String.raw`“Then you won't blame me if I rob you.`],
