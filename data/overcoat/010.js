@@ -21,8 +21,8 @@ window.STORY_SECTIONS['overcoat:010']={id:'010',rows:[
 [String.raw`絶望のあまり彼はひっきりなしにわめきたてながら、広場を横ぎってまっしぐらに交番をめがけて駈け出した。`,String.raw`In desperation, he ran across the square towards the police post.`],
 [String.raw`アカーキイ・アカーキエウィッチは巡査のところへ駆けつけると、息ぎれで声もしどろもどろに、君はいねむりなどして注意を怠っているから、人が追剥にかかっても知らないでいるんだ、とどなりだした。`,String.raw`Out of breath, he accused the officer of **failing to pay attention** while a robbery was taking place.`],
 [String.raw`巡査は、いっこう何も気がつかなかったが、なるほど広場の真中で二人の男があなたを呼びとめたのは知っている、けれど多分あれはお友だちだろうと思ったと答えた。`,String.raw`The officer replied that he had seen two men stop him but **had assumed they were his friends**.`],
-[String.raw`ここでいたずらにぐずぐずいうよりは、明日警部のところへ訴えて出れば、外套を奪った犯人を捜査してくれると言った。`,String.raw`Rather than argue there, he said, Akaky Akakievich should **file a report with the inspector** the next day so the matter could be investigated.`],
+[String.raw`ここでいたずらにぐずぐずいうよりは、明日警部のところへ訴えて出れば、外套を奪った犯人を捜査してくれると言った。`,String.raw`Rather than argue there, he said, Akaky Akakievich should **report the theft to the inspector** the next day so the matter could be investigated.`],
 [String.raw`アカーキイ・アカーキエウィッチはまったくとり乱した姿で家へ駆け戻った。`,String.raw`Akaky Akakievich ran home in a state of complete distress.`],
 [String.raw`彼が一部始終を話すと、老婆はぽんと手をうって、それならまっすぐに本署へ行かなければだめだ、と言った。`,String.raw`When he explained what had happened, his landlady said he needed to go directly to the main police office.`],
-[String.raw`駐在所などではいい加減なことを言って口約束だけはしても、埒があかない、やはり一番いいのはじかに署長のところへ行くことだ、というのだった。`,String.raw`Local officers, she said, might make promises without taking action; the best approach was to **go directly to the person in charge**.`]
+[String.raw`駐在所などではいい加減なことを言って口約束だけはしても、埒があかない、やはり一番いいのはじかに署長のところへ行くことだ、というのだった。`,String.raw`Local officers, she said, might make promises without taking action; the best approach was to **go straight to the police chief**.`]
 ]};
