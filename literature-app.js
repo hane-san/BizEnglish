@@ -1,10 +1,10 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260919-2';
+  const VERSION = '20260919-3';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
-  const state = { work: null, section: null, rate: 1, oneHand: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
+  const state = { work: null, section: null, rate: 1, oneHand: false, review: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
 
   const $ = (s) => document.querySelector(s);
   const els = {
@@ -19,7 +19,8 @@
     row: (work, section) => `lit-row-${work}-${section}`,
     scroll: (work, section) => `lit-scroll-${work}-${section}`,
     rate: 'lit-rate',
-    oneHand: 'lit-onehand'
+    oneHand: 'lit-onehand',
+    review: 'lit-review'
   };
 
   function safeGet(key, fallback = '') { try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; } }
@@ -85,17 +86,18 @@
 
   function currentKey() { return state.work && state.section ? [state.work.id, state.section.id] : ['', '']; }
   function rows() { return [...els.content.querySelectorAll('.reader .row')]; }
-  function playableRows() { return rows().map((row, index) => ({row,index})).filter(x => !x.row.classList.contains('row-heading')); }
+  function isPlayableRow(row) { return !!row && !row.classList.contains('row-heading') && !(state.review && row.classList.contains('review-skip')); }
+  function playableRows() { return rows().map((row, index) => ({row,index})).filter(x => isPlayableRow(x.row)); }
   function nearestPlayable(index, direction = 1) {
     const all = rows();
     if (!all.length) return -1;
     index = Math.max(0, Math.min(index, all.length - 1));
-    if (!all[index].classList.contains('row-heading')) return index;
+    if (isPlayableRow(all[index])) return index;
     for (let d = 1; d < all.length; d++) {
       const forward = index + d * direction;
       const backward = index - d * direction;
-      if (forward >= 0 && forward < all.length && !all[forward].classList.contains('row-heading')) return forward;
-      if (backward >= 0 && backward < all.length && !all[backward].classList.contains('row-heading')) return backward;
+      if (forward >= 0 && forward < all.length && isPlayableRow(all[forward])) return forward;
+      if (backward >= 0 && backward < all.length && isPlayableRow(all[backward])) return backward;
     }
     return -1;
   }
@@ -178,7 +180,7 @@
   }
   function nextPlayableIndex(from, direction) {
     const all = rows();
-    for (let i = from + direction; i >= 0 && i < all.length; i += direction) if (!all[i].classList.contains('row-heading')) return i;
+    for (let i = from + direction; i >= 0 && i < all.length; i += direction) if (isPlayableRow(all[i])) return i;
     return -1;
   }
   async function moveSection(direction, edge = 'first', autoplay = true) {
@@ -224,6 +226,7 @@
     set('nexttrack', nextAndPlay);
   }
   function setOneHand(on, persist = true) {
+    if (on && state.review) setReview(false);
     state.oneHand = !!on;
     state.touch = null;
     if (persist) safeSet(storage.oneHand, state.oneHand ? '1' : '0');
@@ -238,6 +241,30 @@
     setMediaHandlers(state.oneHand);
   }
 
+  function setReview(on, persist = true) {
+    state.review = !!on;
+    if (state.review && state.oneHand) setOneHand(false);
+    if (persist) safeSet(storage.review, state.review ? '1' : '0');
+    document.body.classList.toggle('review-on', state.review);
+    const toggle = $('#reviewToggle');
+    if (toggle) {
+      toggle.classList.toggle('active', state.review);
+      toggle.setAttribute('aria-pressed', state.review ? 'true' : 'false');
+    }
+    if (state.section) {
+      renderRows(state.section);
+      requestAnimationFrame(() => scrollTo({top:0,behavior:'auto'}));
+    }
+  }
+
+  function installReviewToggle() {
+    if ($('#reviewToggle') || !els.controls) return;
+    const b = document.createElement('button');
+    b.type = 'button'; b.id = 'reviewToggle'; b.className = 'review-toggle'; b.setAttribute('aria-label','太字チャンクを日本語から思い出す復習モード'); b.setAttribute('aria-pressed','false'); b.textContent = '復習';
+    b.addEventListener('click', e => { e.stopPropagation(); setReview(!state.review); });
+    els.controls.appendChild(b);
+  }
+
   function installOneHandToggle() {
     if ($('#oneHandToggle') || !els.controls) return;
     const b = document.createElement('button');
@@ -248,15 +275,21 @@
 
   function renderRows(section) {
     let audioNo = 0;
-    const totalAudio = section.rows.filter(([ja,en]) => !isHeadingRow(ja,en)).length;
+    const totalAudio = section.rows.filter(([ja,en]) => {
+      if (isHeadingRow(ja,en)) return false;
+      return !state.review || parseEnglish(en).chunks.length > 0;
+    }).length;
     const html = section.rows.map(([ja,en], i) => {
       const heading = isHeadingRow(ja,en);
       const parsed = parseEnglish(en);
-      const progress = heading ? '' : `<span class="row-progress">${++audioNo} / ${totalAudio}</span>`;
-      const classes = heading ? 'row row-heading' : 'row';
-      return `<div class="${classes}" data-row-index="${i}"><div class="cell ja">${progress}${escapeHtml(ja)}</div><div class="cell en" data-chunks="${escapeHtml(JSON.stringify(parsed.chunks))}">${parsed.html}</div></div>`;
+      const reviewItem = !heading && parsed.chunks.length > 0;
+      const visible = !heading && (!state.review || reviewItem);
+      const progress = visible ? `<span class="row-progress">${++audioNo} / ${totalAudio}</span>` : '';
+      const classes = heading ? 'row row-heading' : `row ${reviewItem ? 'review-item' : 'review-skip'}`;
+      return `<div class="${classes}" data-row-index="${i}"><div class="cell ja">${progress}<span class="ja-text">${escapeHtml(ja)}</span></div><div class="cell en" data-chunks="${escapeHtml(JSON.stringify(parsed.chunks))}"><span class="en-text">${parsed.html}</span></div></div>`;
     }).join('');
-    els.content.innerHTML = `<div class="section-title"><h2>${escapeHtml(state.work.icon)} ${escapeHtml(state.work.title)} <span>｜ ${escapeHtml(state.work.enTitle)}</span></h2><span>${escapeHtml(section.id)}</span></div><div class="reader">${html}</div>`;
+    const sectionLabel = state.review ? `${section.id} · 復習 ${totalAudio}` : section.id;
+    els.content.innerHTML = `<div class="section-title"><h2>${escapeHtml(state.work.icon)} ${escapeHtml(state.work.title)} <span>｜ ${escapeHtml(state.work.enTitle)}</span></h2><span>${escapeHtml(sectionLabel)}</span></div><div class="reader">${html}</div>`;
   }
 
   function restorePosition() {
@@ -336,10 +369,16 @@
     const data = state.section.rows[index];
     if (!data) return;
     markCurrent(index);
+    const chunks = parseEnglish(data[1]).chunks;
+    if (state.review) {
+      if (!chunks.length) return;
+      row.classList.add('review-revealed');
+      speak(chunks.join(' / '), 'en-GB', row.querySelector('.en'), chunks.length === 1 ? '復習' : `${chunks.length} chunks`);
+      return;
+    }
     const lang = accentForClick(cell, e.clientX);
     if (cell.classList.contains('ja')) speak(data[1], lang, cell, '全文');
     else {
-      const chunks = parseEnglish(data[1]).chunks;
       if (!chunks.length) {
         cell.classList.add('no-chunk'); setTimeout(() => cell.classList.remove('no-chunk'), 350); showToast('太字チャンクなし'); return;
       }
@@ -392,12 +431,15 @@
   async function init() {
     if (!catalog.length) { els.content.innerHTML='<div class="reader-error">作品カタログを読み込めませんでした。</div>'; return; }
     fillWorks();
+    installReviewToggle();
     installOneHandToggle();
     const storedRate=Number(safeGet(storage.rate,'1'));
     setRate([.86,1,1.12].includes(storedRate)?storedRate:1,false);
-    state.oneHand=safeGet(storage.oneHand,'0')==='1';
+    state.review=safeGet(storage.review,'0')==='1';
+    state.oneHand=safeGet(storage.oneHand,'0')==='1' && !state.review;
     const last=safeGet(storage.lastWork,'');
     await selectWork(catalog.some(w=>w.id===last)?last:catalog[0].id,true);
+    setReview(state.review,false);
     setOneHand(state.oneHand,false);
     try { speechSynthesis.getVoices(); } catch (_) {}
   }
