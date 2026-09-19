@@ -9,7 +9,7 @@ window.STORY_SECTIONS['rashomon:001']={id:'001',rows:[
 [String.raw`何故かと云うと、この二三年、京都には、地震とか辻風とか火事とか飢饉とか云う災がつづいて起った。`,String.raw`The reason was that, over the previous two or three years, Kyoto had suffered a series of disasters: earthquakes, whirlwinds, fires and famine.`],
 [String.raw`そこで洛中のさびれ方は一通りではない。`,String.raw`As a result, the city had fallen into serious decline.`],
 [String.raw`旧記によると、仏像や仏具を打砕いて、その丹がついたり、金銀の箔がついたりした木を、路ばたにつみ重ねて、薪の料に売っていたと云う事である。`,String.raw`According to old records, people even smashed Buddhist statues and temple fittings and sold the painted or gilded wood as firewood by the roadside.`],
-[String.raw`洛中がその始末であるから、羅生門の修理などは、元より誰も捨てて顧る者がなかった。`,String.raw`With the city in that condition, no one was going to **make repairs to Rashomon a priority**.`],
+[String.raw`洛中がその始末であるから、羅生門の修理などは、元より誰も捨てて顧る者がなかった。`,String.raw`With the city in that condition, no one was going to **go to the trouble of** repairing Rashomon.`],
 [String.raw`するとその荒れ果てたのをよい事にして、狐狸が棲む。`,String.raw`Once it had been left to decay, foxes and badgers began to live there.`],
 [String.raw`盗人が棲む。`,String.raw`Thieves moved in as well.`],
 [String.raw`とうとうしまいには、引取り手のない死人を、この門へ持って来て、棄てて行くと云う習慣さえ出来た。`,String.raw`Eventually, people even developed the habit of bringing unclaimed bodies to the gate and leaving them there.`],
