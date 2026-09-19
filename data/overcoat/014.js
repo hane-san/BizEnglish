@@ -16,7 +16,7 @@ window.STORY_SECTIONS['overcoat:014']={id:'014',rows:[
 [String.raw`それというのも第一には相続人がなかったし、第二に遺産といってもほとんど取るに足らなかったからである。`,String.raw`There were no heirs and almost nothing of value to inherit.`],
 [String.raw`アカーキイ・アカーキエウィッチの遺骸は運び出されて、埋葬された。`,String.raw`His body was taken away and buried.`],
 [String.raw`かくして、そんな人間は初めから生存しなかったもののように、アカーキイ・アカーキエウィッチの存在はペテルブルグから消失したのである。`,String.raw`And so Akaky Akakievich disappeared from St Petersburg as if he had never existed.`],
-[String.raw`その死後数日たって、彼の宿へ役所から、即刻出頭すべしという局長の命令をもった守衛が遣わされた。`,String.raw`A few days after his death, a messenger from the department arrived with an order for him to **report for duty immediately**.`],
+[String.raw`その死後数日たって、彼の宿へ役所から、即刻出頭すべしという局長の命令をもった守衛が遣わされた。`,String.raw`A few days after his death, a messenger from the department arrived with an order for him to **report to the office immediately**.`],
 [String.raw`しかし守衛は空しく立ち帰って、彼がもはや登庁し得ないことを報告した。`,String.raw`The messenger returned and reported that Akaky Akakievich could no longer come to work.`],
 [String.raw`「なぜ？」という質問に対しては、「なぜって、亡くなってしまったんですよ。一昨々日、葬らいも済みましたそうで。」と、答えるほかはなかった。`,String.raw`Asked why, he could only reply, “Because he's dead. He was buried three days ago.”`],
 [String.raw`こんな具合にして、アカーキイ・アカーキエウィッチの死は局内に知れ渡った。`,String.raw`That was how news of his death spread through the department.`],
