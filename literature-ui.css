@@ -9,3 +9,21 @@ main,.study-area{max-width:1040px!important;width:auto!important;margin:12px aut
 .review-on .review-skip,.review-on .row-heading{display:none!important}.review-on .review-item:not(.review-revealed) .en{display:flex!important;align-items:center!important;justify-content:center!important;min-height:76px!important}.review-on .review-item:not(.review-revealed) .en-text{visibility:hidden!important;position:absolute!important}.review-on .review-item:not(.review-revealed) .en::before{content:"タップで答え";color:#a18472;font:700 12px/1.2 "Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;letter-spacing:.04em;border:1px solid #dccabb;border-radius:999px;padding:8px 11px;background:#fffaf4}.review-on .review-item.review-revealed .en{background:#f6f1e9!important}.review-on .review-item.review-revealed .en strong{background:linear-gradient(transparent 66%,rgba(160,111,81,.24) 66%)!important}.review-on .review-item{min-height:88px!important}
 @media(max-width:600px){header{padding-left:12px!important;padding-right:12px!important}.head::after,.masthead-inner::after{font-size:9px!important}.controls-in,.control-row{grid-template-columns:minmax(0,1fr) 86px 42px!important}.rate,.segmented{grid-column:1/2!important;height:34px!important;justify-content:center!important}.review-toggle{grid-column:2/3!important;height:34px!important;padding:0 8px!important}.onehand-toggle{grid-column:3/4!important;justify-self:end;width:42px;height:28px}.rate button,.segmented button{padding:5px 11px!important}main,.study-area{margin-top:8px!important;padding:0 5px!important}.row{grid-template-columns:43% 57%!important;min-height:76px!important}.cell{padding:15px 10px 19px!important}.ja{font-size:15.5px!important;line-height:1.72!important}.en{font-size:16.5px!important;line-height:1.58!important}.section-title{padding:12px 4px 8px!important}.section-title h2{font-size:19px!important}}
 @media(min-width:900px){.ja{font-size:18px!important}.en{font-size:19px!important}.cell{padding:20px 20px 24px!important}}
+
+
+/* Tono story-level editorial headings */
+.row-heading.story-heading{min-height:64px!important;grid-template-columns:44% 56%!important;background:#eadfd3!important;border-top:2px solid #c7ad97!important}
+.row-heading.story-heading .cell{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important;padding:10px 17px 11px!important;cursor:default!important;color:#5a4034!important}
+.row-heading.story-heading .ja{background:#ead8c7!important}
+.row-heading.story-heading .en{background:#f3e7db!important;font-family:"Source Serif 4",Georgia,serif!important}
+.story-kicker{font:700 9px/1.1 "Source Serif 4",Georgia,serif!important;letter-spacing:.09em!important;color:#9b7b67!important;text-transform:uppercase}
+.story-title-ja{font:700 14px/1.45 "Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif!important;letter-spacing:.015em!important;color:#5a4034!important}
+.story-title-en{font:700 14px/1.35 "Source Serif 4",Georgia,serif!important;letter-spacing:.005em!important;color:#684b3c!important}
+.review-on .row-heading.story-heading{display:grid!important}
+@media(max-width:600px){
+  .row-heading.story-heading{grid-template-columns:43% 57%!important;min-height:60px!important}
+  .row-heading.story-heading .cell{padding:9px 9px 10px!important;gap:3px!important}
+  .story-kicker{font-size:8px!important}
+  .story-title-ja{font-size:12.5px!important;line-height:1.4!important}
+  .story-title-en{font-size:12.5px!important;line-height:1.32!important}
+}
