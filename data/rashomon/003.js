@@ -7,7 +7,7 @@ window.STORY_SECTIONS['rashomon:003']={id:'003',rows:[
 [String.raw`しかも、肩とか胸とかの高くなっている部分に、ぼんやりした火の光をうけて、低くなっている部分の影を一層暗くしながら、永久に唖の如く黙っていた。`,String.raw`The faint firelight caught the raised parts of their shoulders and chests, deepening the shadows around them, while they remained permanently silent.`],
 [String.raw`下人は、それらの死骸の腐爛した臭気に思わず、鼻を掩った。`,String.raw`The servant instinctively covered his nose against the smell of decay.`],
 [String.raw`しかし、その手は、次の瞬間には、もう鼻を掩う事を忘れていた。`,String.raw`A moment later, however, he had forgotten all about it.`],
-[String.raw`ある強い感情が、ほとんどことごとくこの男の嗅覚を奪ってしまったからだ。`,String.raw`A much stronger feeling had almost completely overwhelmed his senses.`],
+[String.raw`ある強い感情が、ほとんどことごとくこの男の嗅覚を奪ってしまったからだ。`,String.raw`A powerful emotion had almost completely blotted out his sense of smell.`],
 [String.raw`下人の眼は、その時、はじめてその死骸の中に蹲っている人間を見た。`,String.raw`Only then did he notice a living person crouching among the bodies.`],
 [String.raw`檜皮色の着物を着た、背の低い、痩せた、白髪頭の、猿のような老婆である。`,String.raw`It was a short, thin old woman with white hair, dressed in a dark brown robe and looking almost like a monkey.`],
 [String.raw`その老婆は、右の手に火をともした松の木片を持って、その死骸の一つの顔を覗きこむように眺めていた。`,String.raw`She held a burning piece of pine in her right hand and was peering closely into the face of one of the bodies.`],
@@ -23,7 +23,7 @@ window.STORY_SECTIONS['rashomon:003']={id:'003',rows:[
 [String.raw`この時、誰かがこの下人に、さっき門の下でこの男が考えていた、飢死をするか盗人になるかと云う問題を、改めて持出したら、恐らく下人は、何の未練もなく、飢死を選んだ事であろう。`,String.raw`If someone had now put the earlier question to him again—starve or become a thief—he would probably have chosen starvation **without a second thought**.`],
 [String.raw`それほど、この男の悪を憎む心は、老婆の床に挿した松の木片のように、勢いよく燃え上り出していたのである。`,String.raw`His hatred of wrongdoing had flared up as fiercely as the piece of burning pine in the floor.`],
 [String.raw`下人には、勿論、何故老婆が死人の髪の毛を抜くかわからなかった。`,String.raw`Of course, he had no idea why the old woman was pulling hair from the dead.`],
-[String.raw`従って、合理的には、それを善悪のいずれに片づけてよいか知らなかった。`,String.raw`**Strictly speaking**, he **did not have enough information to judge** whether what she was doing was right or wrong.`],
+[String.raw`従って、合理的には、それを善悪のいずれに片づけてよいか知らなかった。`,String.raw`**From a rational point of view**, he **did not have enough information to judge** whether what she was doing was right or wrong.`],
 [String.raw`しかし下人にとっては、この雨の夜に、この羅生門の上で、死人の髪の毛を抜くと云う事が、それだけで既に許すべからざる悪であった。`,String.raw`But **from his point of view**, pulling hair from a corpse above Rashomon on a rainy night was already, in itself, an unforgivable wrong.`],
 [String.raw`勿論、下人は、さっきまで自分が、盗人になる気でいた事なぞは、とうに忘れていたのである。`,String.raw`He had, of course, completely forgotten that only a short while earlier he had been considering becoming a thief himself.`]
 ]};
