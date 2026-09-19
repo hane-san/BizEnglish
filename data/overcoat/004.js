@@ -21,6 +21,6 @@ window.STORY_SECTIONS['overcoat:004']={id:'004',rows:[
 [String.raw`ついに彼は、これは何か自分の外套のせいではなかろうかと考えた。`,String.raw`Eventually, he **began to suspect that** his overcoat was the problem.`],
 [String.raw`家でたんねんに調べてみると、なるほど二、三ヵ所、つまり背中と両肩のところがまるで木綿ぎれのように薄くなっているのを発見した。`,String.raw`When he examined it carefully at home, he found that several areas across the back and shoulders had become extremely thin.`],
 [String.raw`ラシャは透けて見えるほどすり切れ、裏地がぼろぼろになっている。`,String.raw`The cloth was worn almost transparent and the lining was falling apart.`],
-[String.raw`さて、事のしだいを確かめると、アカーキイ・アカーキエウィッチは、外套をペトローヴィッチのところへもってゆかねばならぬと考えた。`,String.raw`Having **established the cause of the problem**, Akaky Akakievich decided that he would have to take the coat to Petrovich.`],
+[String.raw`さて、事のしだいを確かめると、アカーキイ・アカーキエウィッチは、外套をペトローヴィッチのところへもってゆかねばならぬと考えた。`,String.raw`Having **established what was wrong**, Akaky Akakievich decided that he would have to take the coat to Petrovich.`],
 [String.raw`それはどこかの四階の裏ばしごを上がったところに住んでいる仕立屋で、めっかちな上に顔中あばただらけの男であったけれど、小役人やその他いろんな顧客のズボンや燕尾服の繕い仕事をかなり巧くやっていた。`,String.raw`Petrovich was a one-eyed, pockmarked tailor living at the top of a back staircase, and he was quite good at repairing trousers and coats for minor officials and other customers.`]
 ]};
