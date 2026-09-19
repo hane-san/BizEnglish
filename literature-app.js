@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260919-10';
+  const VERSION = '20260919-11';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
   const state = { work: null, section: null, rate: 1, oneHand: false, review: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
@@ -292,7 +292,8 @@
       const classes = heading ? 'row row-heading' : `row ${reviewItem ? 'review-item' : 'review-skip'}`;
       return `<div class="${classes}" data-row-index="${i}"><div class="cell ja">${progress}<span class="ja-text">${escapeHtml(ja)}</span></div><div class="cell en" data-chunks="${escapeHtml(JSON.stringify(parsed.chunks))}"><span class="en-text">${parsed.html}</span></div></div>`;
     }).join('');
-    const sectionLabel = state.review ? `${section.id} · 復習 ${totalAudio}` : section.id;
+    const baseSectionLabel = state.work?.sectionLabels?.[section.id] || section.id;
+    const sectionLabel = state.review ? `${baseSectionLabel} · 復習 ${totalAudio}` : baseSectionLabel;
     const editorialNote = state.work?.id === 'tono' && window.STORY_TITLES?.tono ? ' · 見出しは教材用' : '';
     els.content.innerHTML = `<div class="section-title"><h2>${escapeHtml(state.work.icon)} ${escapeHtml(state.work.title)} <span>｜ ${escapeHtml(state.work.enTitle)}</span></h2><span>${escapeHtml(sectionLabel + editorialNote)}</span></div><div class="reader">${html}</div>`;
   }
@@ -333,7 +334,7 @@
     els.work.innerHTML = catalog.map(w => `<option value="${escapeHtml(w.id)}">${escapeHtml(w.icon)} ${escapeHtml(w.title)}</option>`).join('');
   }
   function fillSections(work) {
-    els.section.innerHTML = work.sectionIds.map(id => `<option value="${id}">${id}</option>`).join('');
+    els.section.innerHTML = work.sectionIds.map(id => `<option value="${id}">${escapeHtml(work.sectionLabels?.[id] || id)}</option>`).join('');
   }
   async function selectWork(workId, restoreSection = true) {
     state.work = catalog.find(w => w.id === workId) || catalog[0] || null;
