@@ -1,4 +1,31 @@
 window.STORY_SECTIONS=window.STORY_SECTIONS||{};
 window.STORY_SECTIONS['romeo:006']={id:'006',rows:[
-
+[String.raw`ヂュリ　乳母を出してやった時、時計は九つを打ってゐた。半時間で歸るといふ約束。`,String.raw`It was nine when I sent the Nurse out. She promised to be back in half an hour.`],
+[String.raw`ヂュリ　九時から十二時までの長い々三時間、それぢゃのに、まだ歸って來ぬ。`,String.raw`It has been three long hours, and she still isn't back.`],
+[String.raw`ヂュリ　おゝ、嬉しや、歸って來た。なう乳母いの、如何ぞいの？　あの方に逢やったかや？`,String.raw`At last! Nurse, tell me — did you see him?`],
+[String.raw`乳母　おゝ、辛度！　暫時まァ休まして下され。`,String.raw`Give me a moment to breathe. I'm exhausted.`],
+[String.raw`ヂュリ　予の骨々を其方に與っても、速う其消息が此方へ欲しい。`,String.raw`I'd give you my own aching bones if you'd just give me the news.`],
+[String.raw`乳母　ま、氣忙しい！　暫時の間が待てぬかいな？`,String.raw`You are impatient. Can't you wait for a moment?`],
+[String.raw`ヂュリ　息が切れて言はれぬと言やる程なら、息は切れてゐぬ筈ぢゃ。`,String.raw`If you have enough breath to explain why you can't speak, you have enough breath to answer me.`],
+[String.raw`ヂュリ　これ、吉か、凶か？　それさへ言うてたもったら、詳細事は後でもよい。`,String.raw`Just tell me this first: **is it good news or bad news**? The details can wait.`],
+[String.raw`乳母　ロミオ！　ありゃ不可んわいの。面附こそは誰れよりも見よけれ……眞の事、仔羊のやうに、温和しい人ぢゃ。`,String.raw`Romeo? Well, he's certainly handsome — and gentle as a lamb.`],
+[String.raw`ヂュリ　其樣な事は、もう夙に知ってゐる。婚禮の事をば何と言うてぢゃ？`,String.raw`I know all that already. **What did he say about the wedding**?`],
+[String.raw`乳母　お前今日はお參詣に往ても可いといふお許可が出ましたかえ？`,String.raw`Do you have permission to go out for confession today?`],
+[String.raw`ヂュリ　あいの。`,String.raw`Yes.`],
+[String.raw`乳母　では、急いでロレンス樣の庵室まで往かっしゃれ。`,String.raw`Then hurry to Friar Laurence's cell.`],
+[String.raw`乳母　あそこでお前を内室になさるゝ人が待ってぢゃ。`,String.raw`The man who means to make you his wife is waiting there.`],
+[String.raw`乳母　予はまた別の方へ往て梯子を取って來ねばならぬ。`,String.raw`I have to go somewhere else and collect the rope ladder.`],
+[String.raw`ヂュリ　速う其幸福に！`,String.raw`Then I'm off to happiness.`],
+[String.raw`ロレ　諸天善神、願はくは此神聖なる式に笑ませられませい。`,String.raw`May heaven smile on this holy ceremony.`],
+[String.raw`ロミオ　如何な悲哀が來ようとも、姫の顏を見る嬉しさの其刹那には易られない。`,String.raw`Whatever sadness comes later, it cannot outweigh the joy I feel in this moment.`],
+[String.raw`ロミオ　神聖い語で二人の手を結び合はして下されば、戀を亡す死の爲に此身が如何樣にならうとまゝ。`,String.raw`Once you've joined our hands in marriage, I don't care what happens afterwards.`],
+[String.raw`ロレ　さうした過激の歡樂は、とかく過激の終を遂ぐる。`,String.raw`Violent delights often **end violently**.`],
+[String.raw`ロレ　火と煙硝とが抱合へば忽ち爆發するがやうに、勝誇る最中にでも滅び失せる。`,String.raw`Like fire meeting gunpowder, they can destroy themselves at the very moment they come together.`],
+[String.raw`ロレ　ぢゃによって、戀も程よう。程よい戀は長う續く。`,String.raw`So love in moderation. A steady love is more likely to last.`],
+[String.raw`ヂュリ　教父さま、ごきげんよろしう！`,String.raw`Good day, Father.`],
+[String.raw`ロミオ　今日を嬉しいと思ふ心が予と同じに滿腔なら、其夢のやうな嬉しさを卿の聲で奏でゝ下され。`,String.raw`If you're as happy as I am, tell me what this moment means to you.`],
+[String.raw`ヂュリ　内實の十分な思想は、言葉の花で飾るには及ばぬ。`,String.raw`When a feeling is full enough, **it doesn't need to be dressed up in words**.`],
+[String.raw`ヂュリ　妾の戀は、分量が大きうなったゆゑに、今は其半分をも計算することが出來ぬ。`,String.raw`My love has grown so much that I couldn't measure even half of it now.`],
+[String.raw`ロレ　さゝ、予と一しょにござれ。速う濟してのけう。`,String.raw`Come with me. Let's get the ceremony done.`],
+[String.raw`ロレ　尊い教會が二人を一人に合體さするまでは、さし對ひでゐてはなりませぬのぢゃ。`,String.raw`Until the Church has made you one, I won't leave the two of you alone together.`]
 ]};
