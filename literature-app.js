@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const VERSION = '20260920-1';
+  const VERSION = '20260921-2';
   const catalog = Array.isArray(window.STORY_CATALOG) ? window.STORY_CATALOG : [];
   const loadedScripts = new Map();
   const state = { work: null, section: null, rate: 1, oneHand: false, review: false, currentIndex: 0, touch: null, suppressClickUntil: 0 };
@@ -283,7 +283,9 @@
       const heading = isHeadingRow(ja,en);
       const title = heading ? (window.STORY_TITLES?.[state.work?.id]?.[String(Number(en))] || null) : null;
       if (heading && title) {
-        return `<div class="row row-heading story-heading" data-row-index="${i}" data-story-no="${escapeHtml(en)}"><div class="cell ja"><span class="story-kicker">第${escapeHtml(en)}話</span><span class="story-title-ja">${escapeHtml(title.ja)}</span></div><div class="cell en"><span class="story-kicker">STORY ${escapeHtml(en)}</span><span class="story-title-en">${escapeHtml(title.en)}</span></div></div>`;
+        const topicJa = title.topicJa ? `<span class="story-topic story-topic-ja">${escapeHtml(title.topicJa)}</span>` : '';
+        const topicEn = title.topicEn ? `<span class="story-topic story-topic-en">${escapeHtml(title.topicEn)}</span>` : '';
+        return `<div class="row row-heading story-heading" data-row-index="${i}" data-story-no="${escapeHtml(en)}"><div class="cell ja"><span class="story-kicker">第${escapeHtml(en)}話</span>${topicJa}<span class="story-title-ja">${escapeHtml(title.ja)}</span></div><div class="cell en"><span class="story-kicker">STORY ${escapeHtml(en)}</span>${topicEn}<span class="story-title-en">${escapeHtml(title.en)}</span></div></div>`;
       }
       const parsed = parseEnglish(en);
       const reviewItem = !heading && parsed.chunks.length > 0;
